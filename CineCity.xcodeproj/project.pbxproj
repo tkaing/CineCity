@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		506FFDA123ACFFA40010AB29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDA023ACFFA40010AB29 /* AppDelegate.swift */; };
-		506FFDA323ACFFA50010AB29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDA223ACFFA50010AB29 /* SceneDelegate.swift */; };
 		506FFDA523ACFFA50010AB29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDA423ACFFA50010AB29 /* ViewController.swift */; };
 		506FFDAA23ACFFA60010AB29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506FFDA923ACFFA60010AB29 /* Assets.xcassets */; };
 		506FFDAD23ACFFA60010AB29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506FFDAB23ACFFA60010AB29 /* LaunchScreen.storyboard */; };
@@ -43,7 +42,6 @@
 		31B73B3FD4787D1F7A5ACBA9 /* Pods-CineCity-CineCityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineCity-CineCityUITests.release.xcconfig"; path = "Target Support Files/Pods-CineCity-CineCityUITests/Pods-CineCity-CineCityUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506FFD9D23ACFFA40010AB29 /* CineCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506FFDA023ACFFA40010AB29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		506FFDA223ACFFA50010AB29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		506FFDA423ACFFA50010AB29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		506FFDA923ACFFA60010AB29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506FFDAC23ACFFA60010AB29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				550712175857818AC329813A /* Pods-CineCityTests.debug.xcconfig */,
 				1AD517A73C869E502F31F0F8 /* Pods-CineCityTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -129,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				506FFDA023ACFFA40010AB29 /* AppDelegate.swift */,
-				506FFDA223ACFFA50010AB29 /* SceneDelegate.swift */,
 				506FFDA423ACFFA50010AB29 /* ViewController.swift */,
 				506FFDA923ACFFA60010AB29 /* Assets.xcassets */,
 				506FFDAB23ACFFA60010AB29 /* LaunchScreen.storyboard */,
@@ -406,7 +402,6 @@
 			files = (
 				506FFDA523ACFFA50010AB29 /* ViewController.swift in Sources */,
 				506FFDA123ACFFA40010AB29 /* AppDelegate.swift in Sources */,
-				506FFDA323ACFFA50010AB29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
