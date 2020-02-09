@@ -8,12 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		506FFDA123ACFFA40010AB29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDA023ACFFA40010AB29 /* AppDelegate.swift */; };
-		506FFDA523ACFFA50010AB29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDA423ACFFA50010AB29 /* ViewController.swift */; };
 		506FFDAA23ACFFA60010AB29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506FFDA923ACFFA60010AB29 /* Assets.xcassets */; };
 		506FFDAD23ACFFA60010AB29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506FFDAB23ACFFA60010AB29 /* LaunchScreen.storyboard */; };
 		506FFDB823ACFFA60010AB29 /* CineCityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDB723ACFFA60010AB29 /* CineCityTests.swift */; };
 		506FFDC323ACFFA60010AB29 /* CineCityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDC223ACFFA60010AB29 /* CineCityUITests.swift */; };
+		8F24E00923C757AE006094A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E00723C757AE006094A3 /* HomeViewController.swift */; };
+		8F24E00A23C757AE006094A3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E00823C757AE006094A3 /* HomeViewController.xib */; };
+		8F24E01523DB666E006094A3 /* BilletsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E01323DB666E006094A3 /* BilletsTableViewCell.swift */; };
+		8F24E01623DB666E006094A3 /* BilletsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E01423DB666E006094A3 /* BilletsTableViewCell.xib */; };
+		8F24E01A23DB6FF7006094A3 /* Billet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E01923DB6FF7006094A3 /* Billet.swift */; };
+		8F24E01F23DB74AD006094A3 /* BilletsMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E01E23DB74AD006094A3 /* BilletsMockService.swift */; };
+		8F24E02123DB7538006094A3 /* BilletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E02023DB7538006094A3 /* BilletService.swift */; };
+		8F24E05A23EB655F006094A3 /* BilletsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E05623EB655E006094A3 /* BilletsListViewController.xib */; };
+		8F24E05B23EB655F006094A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E05723EB655E006094A3 /* LoginViewController.swift */; };
+		8F24E05C23EB655F006094A3 /* BilletsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E05823EB655F006094A3 /* BilletsListViewController.swift */; };
+		8F24E05D23EB655F006094A3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E05923EB655F006094A3 /* LoginViewController.xib */; };
+		8F24E06E23ED9407006094A3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E06C23ED9407006094A3 /* SignUpViewController.swift */; };
+		8F24E06F23ED9407006094A3 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E06D23ED9407006094A3 /* SignUpViewController.xib */; };
+		9856B3EF23F012CE009210EC /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9856B3ED23F012CE009210EC /* EventsViewController.swift */; };
+		9856B3F023F012CE009210EC /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9856B3EE23F012CE009210EC /* EventsViewController.xib */; };
+		9856B3F323F01438009210EC /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9856B3F123F01438009210EC /* AdminLoginViewController.swift */; };
+		9856B3F423F01438009210EC /* AdminLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9856B3F223F01438009210EC /* AdminLoginViewController.xib */; };
 		A11DD121B7B8A77FBE02D7DE /* Pods_CineCityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACCF3D420863C6298240FC3 /* Pods_CineCityTests.framework */; };
+		CE555FF023EDA28000D9AC71 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE555FF223EDA28000D9AC71 /* Localizable.strings */; };
+		CE555FFA23EDC3C200D9AC71 /* PastReservationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE555FF823EDC3C200D9AC71 /* PastReservationsListViewController.swift */; };
+		CE555FFB23EDC3C200D9AC71 /* PastReservationsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE555FF923EDC3C200D9AC71 /* PastReservationsListViewController.xib */; };
+		CE555FFE23EDC73500D9AC71 /* PastReservationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE555FFC23EDC73500D9AC71 /* PastReservationsTableViewCell.swift */; };
+		CE555FFF23EDC73500D9AC71 /* PastReservationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE555FFD23EDC73500D9AC71 /* PastReservationsTableViewCell.xib */; };
 		D3CAD3D345855698660B3C59 /* Pods_CineCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CF14DF8B75ED94895965C1 /* Pods_CineCity.framework */; };
 		EF35C42B0C9C67EDEBA0D5D4 /* Pods_CineCity_CineCityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10FA7B981BE86BF02FBAED7 /* Pods_CineCity_CineCityUITests.framework */; };
 /* End PBXBuildFile section */
@@ -42,7 +63,6 @@
 		31B73B3FD4787D1F7A5ACBA9 /* Pods-CineCity-CineCityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineCity-CineCityUITests.release.xcconfig"; path = "Target Support Files/Pods-CineCity-CineCityUITests/Pods-CineCity-CineCityUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506FFD9D23ACFFA40010AB29 /* CineCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506FFDA023ACFFA40010AB29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		506FFDA423ACFFA50010AB29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		506FFDA923ACFFA60010AB29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506FFDAC23ACFFA60010AB29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		506FFDAE23ACFFA60010AB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +74,31 @@
 		506FFDC423ACFFA60010AB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550712175857818AC329813A /* Pods-CineCityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineCityTests.debug.xcconfig"; path = "Target Support Files/Pods-CineCityTests/Pods-CineCityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7ACCF3D420863C6298240FC3 /* Pods_CineCityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineCityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F24E00723C757AE006094A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8F24E00823C757AE006094A3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8F24E01323DB666E006094A3 /* BilletsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletsTableViewCell.swift; sourceTree = "<group>"; };
+		8F24E01423DB666E006094A3 /* BilletsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BilletsTableViewCell.xib; sourceTree = "<group>"; };
+		8F24E01923DB6FF7006094A3 /* Billet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billet.swift; sourceTree = "<group>"; };
+		8F24E01E23DB74AD006094A3 /* BilletsMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletsMockService.swift; sourceTree = "<group>"; };
+		8F24E02023DB7538006094A3 /* BilletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletService.swift; sourceTree = "<group>"; };
+		8F24E05623EB655E006094A3 /* BilletsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BilletsListViewController.xib; sourceTree = "<group>"; };
+		8F24E05723EB655E006094A3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8F24E05823EB655F006094A3 /* BilletsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BilletsListViewController.swift; sourceTree = "<group>"; };
+		8F24E05923EB655F006094A3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8F24E06C23ED9407006094A3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8F24E06D23ED9407006094A3 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		9856B3ED23F012CE009210EC /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		9856B3EE23F012CE009210EC /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
+		9856B3F123F01438009210EC /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
+		9856B3F223F01438009210EC /* AdminLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminLoginViewController.xib; sourceTree = "<group>"; };
 		BD9D7052D5E2E5ED111C8F27 /* Pods-CineCity-CineCityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineCity-CineCityUITests.debug.xcconfig"; path = "Target Support Files/Pods-CineCity-CineCityUITests/Pods-CineCity-CineCityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE555FEF23EDA26100D9AC71 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CE555FF123EDA28000D9AC71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE555FF323EDA28600D9AC71 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE555FF823EDC3C200D9AC71 /* PastReservationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastReservationsListViewController.swift; sourceTree = "<group>"; };
+		CE555FF923EDC3C200D9AC71 /* PastReservationsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastReservationsListViewController.xib; sourceTree = "<group>"; };
+		CE555FFC23EDC73500D9AC71 /* PastReservationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastReservationsTableViewCell.swift; sourceTree = "<group>"; };
+		CE555FFD23EDC73500D9AC71 /* PastReservationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastReservationsTableViewCell.xib; sourceTree = "<group>"; };
 		E1524649FF153C089F64CFBC /* Pods-CineCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineCity.release.xcconfig"; path = "Target Support Files/Pods-CineCity/Pods-CineCity.release.xcconfig"; sourceTree = "<group>"; };
 		F10FA7B981BE86BF02FBAED7 /* Pods_CineCity_CineCityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineCity_CineCityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,11 +169,31 @@
 		506FFD9F23ACFFA40010AB29 /* CineCity */ = {
 			isa = PBXGroup;
 			children = (
+				8F24E01B23DB745D006094A3 /* Platforms */,
+				8F24E01723DB6F37006094A3 /* Domains */,
 				506FFDA023ACFFA40010AB29 /* AppDelegate.swift */,
-				506FFDA423ACFFA50010AB29 /* ViewController.swift */,
 				506FFDA923ACFFA60010AB29 /* Assets.xcassets */,
 				506FFDAB23ACFFA60010AB29 /* LaunchScreen.storyboard */,
 				506FFDAE23ACFFA60010AB29 /* Info.plist */,
+				8F24E00723C757AE006094A3 /* HomeViewController.swift */,
+				8F24E00823C757AE006094A3 /* HomeViewController.xib */,
+				8F24E01323DB666E006094A3 /* BilletsTableViewCell.swift */,
+				8F24E01423DB666E006094A3 /* BilletsTableViewCell.xib */,
+				8F24E05823EB655F006094A3 /* BilletsListViewController.swift */,
+				8F24E05623EB655E006094A3 /* BilletsListViewController.xib */,
+				8F24E05723EB655E006094A3 /* LoginViewController.swift */,
+				8F24E05923EB655F006094A3 /* LoginViewController.xib */,
+				8F24E06C23ED9407006094A3 /* SignUpViewController.swift */,
+				8F24E06D23ED9407006094A3 /* SignUpViewController.xib */,
+				CE555FF223EDA28000D9AC71 /* Localizable.strings */,
+				CE555FF823EDC3C200D9AC71 /* PastReservationsListViewController.swift */,
+				CE555FF923EDC3C200D9AC71 /* PastReservationsListViewController.xib */,
+				CE555FFC23EDC73500D9AC71 /* PastReservationsTableViewCell.swift */,
+				CE555FFD23EDC73500D9AC71 /* PastReservationsTableViewCell.xib */,
+				9856B3ED23F012CE009210EC /* EventsViewController.swift */,
+				9856B3EE23F012CE009210EC /* EventsViewController.xib */,
+				9856B3F123F01438009210EC /* AdminLoginViewController.swift */,
+				9856B3F223F01438009210EC /* AdminLoginViewController.xib */,
 			);
 			path = CineCity;
 			sourceTree = "<group>";
@@ -160,6 +224,47 @@
 				7ACCF3D420863C6298240FC3 /* Pods_CineCityTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F24E01723DB6F37006094A3 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				8F24E01823DB6F4C006094A3 /* Billets */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		8F24E01823DB6F4C006094A3 /* Billets */ = {
+			isa = PBXGroup;
+			children = (
+				8F24E01923DB6FF7006094A3 /* Billet.swift */,
+				8F24E02023DB7538006094A3 /* BilletService.swift */,
+			);
+			path = Billets;
+			sourceTree = "<group>";
+		};
+		8F24E01B23DB745D006094A3 /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				8F24E01C23DB746B006094A3 /* Mock */,
+			);
+			path = Platforms;
+			sourceTree = "<group>";
+		};
+		8F24E01C23DB746B006094A3 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				8F24E01D23DB7489006094A3 /* Billets */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		8F24E01D23DB7489006094A3 /* Billets */ = {
+			isa = PBXGroup;
+			children = (
+				8F24E01E23DB74AD006094A3 /* BilletsMockService.swift */,
+			);
+			path = Billets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +358,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 506FFD9423ACFFA40010AB29;
 			productRefGroup = 506FFD9E23ACFFA40010AB29 /* Products */;
@@ -272,7 +378,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				506FFDAD23ACFFA60010AB29 /* LaunchScreen.storyboard in Resources */,
+				8F24E05A23EB655F006094A3 /* BilletsListViewController.xib in Resources */,
+				8F24E06F23ED9407006094A3 /* SignUpViewController.xib in Resources */,
 				506FFDAA23ACFFA60010AB29 /* Assets.xcassets in Resources */,
+				8F24E00A23C757AE006094A3 /* HomeViewController.xib in Resources */,
+				9856B3F023F012CE009210EC /* EventsViewController.xib in Resources */,
+				CE555FF023EDA28000D9AC71 /* Localizable.strings in Resources */,
+				CE555FFF23EDC73500D9AC71 /* PastReservationsTableViewCell.xib in Resources */,
+				CE555FFB23EDC3C200D9AC71 /* PastReservationsListViewController.xib in Resources */,
+				8F24E05D23EB655F006094A3 /* LoginViewController.xib in Resources */,
+				9856B3F423F01438009210EC /* AdminLoginViewController.xib in Resources */,
+				8F24E01623DB666E006094A3 /* BilletsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,8 +516,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506FFDA523ACFFA50010AB29 /* ViewController.swift in Sources */,
+				8F24E01A23DB6FF7006094A3 /* Billet.swift in Sources */,
 				506FFDA123ACFFA40010AB29 /* AppDelegate.swift in Sources */,
+				8F24E05C23EB655F006094A3 /* BilletsListViewController.swift in Sources */,
+				8F24E01F23DB74AD006094A3 /* BilletsMockService.swift in Sources */,
+				8F24E05B23EB655F006094A3 /* LoginViewController.swift in Sources */,
+				9856B3EF23F012CE009210EC /* EventsViewController.swift in Sources */,
+				CE555FFA23EDC3C200D9AC71 /* PastReservationsListViewController.swift in Sources */,
+				8F24E00923C757AE006094A3 /* HomeViewController.swift in Sources */,
+				9856B3F323F01438009210EC /* AdminLoginViewController.swift in Sources */,
+				CE555FFE23EDC73500D9AC71 /* PastReservationsTableViewCell.swift in Sources */,
+				8F24E06E23ED9407006094A3 /* SignUpViewController.swift in Sources */,
+				8F24E02123DB7538006094A3 /* BilletService.swift in Sources */,
+				8F24E01523DB666E006094A3 /* BilletsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,8 +568,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				506FFDAC23ACFFA60010AB29 /* Base */,
+				CE555FEF23EDA26100D9AC71 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE555FF223EDA28000D9AC71 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE555FF123EDA28000D9AC71 /* en */,
+				CE555FF323EDA28600D9AC71 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -452,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -512,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -569,6 +708,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CineCity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,6 +727,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CineCity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

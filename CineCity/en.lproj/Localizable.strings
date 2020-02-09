@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  CineCity
+
+  Created by Fabiana Montiel on 07/02/2020.
+  Copyright © 2020 Vtd. All rights reserved.
+*/
+"login" = "LOGIN";
+"username" = "Username";
+"password" = "Password";
+"past" = "Past";
+"upcoming" = "Upcoming";
