@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var textfield_username: UITextField!
     @IBOutlet var textfield_password: UITextField!
     @IBOutlet var btn_login: UIButton!
+    @IBOutlet var signUp_button: UIButton!
     
     
     @IBAction func press_login(_ sender: Any) {
@@ -75,7 +76,11 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(adminLoginViewController, animated: true)
     }
 
-
+    @IBAction func touchSignUpButton() {
+        let signUpViewController = SignUpViewController()
+        self.navigationController?.pushViewController(signUpViewController, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

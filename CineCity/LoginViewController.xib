@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,6 +13,7 @@
                 <outlet property="btn_login" destination="4kd-4g-JDV" id="oJU-sr-SqM"/>
                 <outlet property="label_password" destination="TIm-uQ-zYF" id="sor-36-Kq8"/>
                 <outlet property="label_username" destination="pjd-NP-HSt" id="ayc-J9-WQ2"/>
+                <outlet property="signUp_button" destination="mob-xO-Ekc" id="qdT-E1-eM9"/>
                 <outlet property="textfield_password" destination="YSb-hA-ZWi" id="wuh-7R-rq0"/>
                 <outlet property="textfield_username" destination="SHN-11-aYK" id="3R9-ns-3FY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="YRV-xX-J5A"/>
@@ -84,6 +86,13 @@
                         <constraint firstAttribute="height" constant="128" id="PtN-eO-6Rj"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mob-xO-Ekc">
+                    <rect key="frame" x="180" y="636" width="54" height="30"/>
+                    <state key="normal" title="Sign Up"/>
+                    <connections>
+                        <action selector="touchSignUpButton" destination="-1" eventType="touchUpInside" id="Yu2-f0-zce"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -94,10 +103,12 @@
                 <constraint firstItem="afo-m1-LWy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="f1x-Wf-tcJ"/>
                 <constraint firstItem="4kd-4g-JDV" firstAttribute="top" secondItem="q1Z-Zq-pUx" secondAttribute="bottom" constant="-92" id="nCl-Gu-hmV"/>
                 <constraint firstItem="Wk9-RL-mvw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="176" id="okG-kV-706"/>
+                <constraint firstItem="mob-xO-Ekc" firstAttribute="top" secondItem="4kd-4g-JDV" secondAttribute="bottom" constant="8" id="rFQ-7Q-FpP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="afo-m1-LWy" secondAttribute="bottom" id="suv-u2-mET"/>
                 <constraint firstItem="afo-m1-LWy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vjU-oK-mHr"/>
                 <constraint firstItem="q1Z-Zq-pUx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wDn-KH-LXg"/>
                 <constraint firstItem="Wk9-RL-mvw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="87" id="whL-HO-lFk"/>
+                <constraint firstItem="mob-xO-Ekc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yAd-kT-d1C"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
