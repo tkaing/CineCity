@@ -34,19 +34,25 @@ class BilletsListViewController: UIViewController, UITableViewDelegate, UITableV
         btn_upcoming.setTitle(NSLocalizedString("upcoming", comment: ""), for: .normal)
         
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        print("fdfsdfs")
+        self.billetsService.all { (billets) in
+            self.billets = billets
+            print(self.billets)
+        }
     }
 
-    var billetsService: BilletService {
-        return BilletsMockService()
-        //return BilletsAPIService
+    var billetsService: BilletCall {
+        //return BilletsMockService()
+        return BilletCallAPI()
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
-        self.billetsService.getAll { (billets) in
+        /*self.billetsService.all { (billets) in
             self.billets = billets
-        }
+            print(self.billets)
+        }*/
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,8 +62,8 @@ class BilletsListViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: BilletsListViewController.BilletsTableViewCellId, for: indexPath) as! BilletsTableViewCell
         let billet = self.billets[indexPath.row]
-        cell.titleLabel.text = billet.film
-        cell.dateLabel.text = billet.date
+        cell.titleLabel.text = billet.film.title
+        cell.dateLabel.text = "une date"
         cell.timeLabel.text = billet.time
         return cell
     }

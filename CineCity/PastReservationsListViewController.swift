@@ -28,16 +28,22 @@ class PastReservationsListViewController: UIViewController, UITableViewDelegate,
     @IBAction func touch_upcoming(_ sender: Any) {
     }
     
-    var billetsService: BilletService {
-           return BilletsMockService()
-           //return BilletsAPIService
+    var billetsService: BilletCall {
+           //return BilletsMockService()
+           return BilletCallAPI()
+    
+    }
+    var filmCall: FilmCall {
+           //return BilletsMockService()
+           return FilmCallAPI()
     
     }
     override func viewDidAppear(_ animated: Bool) {
-           self.billetsService.getAll { (billets) in
-               self.reservations = billets
-           }
-       }
+        self.billetsService.all { (billets) in
+            self.reservations = billets
+            print(self.reservations)
+        }
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.reservations.count
     }
@@ -45,8 +51,8 @@ class PastReservationsListViewController: UIViewController, UITableViewDelegate,
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PastReservationsListViewController.ReservationsTableViewCellId, for: indexPath) as! PastReservationsTableViewCell
         let billet = self.reservations[indexPath.row]
-        cell.titleLabel.text = billet.film
-        cell.dateLabel.text = billet.date
+        cell.titleLabel.text = billet.film.title
+        cell.dateLabel.text = "une date"
         cell.timeLabel.text = billet.time
         return cell
     }

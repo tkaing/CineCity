@@ -12,11 +12,18 @@
 		506FFDAD23ACFFA60010AB29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506FFDAB23ACFFA60010AB29 /* LaunchScreen.storyboard */; };
 		506FFDB823ACFFA60010AB29 /* CineCityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDB723ACFFA60010AB29 /* CineCityTests.swift */; };
 		506FFDC323ACFFA60010AB29 /* CineCityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDC223ACFFA60010AB29 /* CineCityUITests.swift */; };
+		50C619B923F1443F00A92A93 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619B823F1443F00A92A93 /* Film.swift */; };
+		50C619BB23F1445500A92A93 /* FilmCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619BA23F1445500A92A93 /* FilmCall.swift */; };
+		50C619BD23F1446200A92A93 /* FilmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619BC23F1446200A92A93 /* FilmUtils.swift */; };
+		50C619C223F144B400A92A93 /* Billet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619C123F144B400A92A93 /* Billet.swift */; };
+		50C619C423F144BE00A92A93 /* BilletCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619C323F144BE00A92A93 /* BilletCall.swift */; };
+		50C619C923F144F200A92A93 /* FilmCallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619C823F144F200A92A93 /* FilmCallAPI.swift */; };
+		50C619CB23F144FB00A92A93 /* BilletCallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619CA23F144FB00A92A93 /* BilletCallAPI.swift */; };
+		50C619CD23F1450800A92A93 /* BilletUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619CC23F1450800A92A93 /* BilletUtils.swift */; };
 		8F24E00923C757AE006094A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E00723C757AE006094A3 /* HomeViewController.swift */; };
 		8F24E00A23C757AE006094A3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E00823C757AE006094A3 /* HomeViewController.xib */; };
 		8F24E01523DB666E006094A3 /* BilletsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E01323DB666E006094A3 /* BilletsTableViewCell.swift */; };
 		8F24E01623DB666E006094A3 /* BilletsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E01423DB666E006094A3 /* BilletsTableViewCell.xib */; };
-		8F24E01A23DB6FF7006094A3 /* Billet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E01923DB6FF7006094A3 /* Billet.swift */; };
 		8F24E01F23DB74AD006094A3 /* BilletsMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E01E23DB74AD006094A3 /* BilletsMockService.swift */; };
 		8F24E02123DB7538006094A3 /* BilletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E02023DB7538006094A3 /* BilletService.swift */; };
 		8F24E05A23EB655F006094A3 /* BilletsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E05623EB655E006094A3 /* BilletsListViewController.xib */; };
@@ -72,13 +79,20 @@
 		506FFDBE23ACFFA60010AB29 /* CineCityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineCityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506FFDC223ACFFA60010AB29 /* CineCityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineCityUITests.swift; sourceTree = "<group>"; };
 		506FFDC423ACFFA60010AB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C619B823F1443F00A92A93 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		50C619BA23F1445500A92A93 /* FilmCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCall.swift; sourceTree = "<group>"; };
+		50C619BC23F1446200A92A93 /* FilmUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmUtils.swift; sourceTree = "<group>"; };
+		50C619C123F144B400A92A93 /* Billet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billet.swift; sourceTree = "<group>"; };
+		50C619C323F144BE00A92A93 /* BilletCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletCall.swift; sourceTree = "<group>"; };
+		50C619C823F144F200A92A93 /* FilmCallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCallAPI.swift; sourceTree = "<group>"; };
+		50C619CA23F144FB00A92A93 /* BilletCallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletCallAPI.swift; sourceTree = "<group>"; };
+		50C619CC23F1450800A92A93 /* BilletUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletUtils.swift; sourceTree = "<group>"; };
 		550712175857818AC329813A /* Pods-CineCityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineCityTests.debug.xcconfig"; path = "Target Support Files/Pods-CineCityTests/Pods-CineCityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7ACCF3D420863C6298240FC3 /* Pods_CineCityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineCityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F24E00723C757AE006094A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8F24E00823C757AE006094A3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		8F24E01323DB666E006094A3 /* BilletsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletsTableViewCell.swift; sourceTree = "<group>"; };
 		8F24E01423DB666E006094A3 /* BilletsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BilletsTableViewCell.xib; sourceTree = "<group>"; };
-		8F24E01923DB6FF7006094A3 /* Billet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billet.swift; sourceTree = "<group>"; };
 		8F24E01E23DB74AD006094A3 /* BilletsMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletsMockService.swift; sourceTree = "<group>"; };
 		8F24E02023DB7538006094A3 /* BilletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletService.swift; sourceTree = "<group>"; };
 		8F24E05623EB655E006094A3 /* BilletsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BilletsListViewController.xib; sourceTree = "<group>"; };
@@ -169,6 +183,7 @@
 		506FFD9F23ACFFA40010AB29 /* CineCity */ = {
 			isa = PBXGroup;
 			children = (
+				50C619B423F1435C00A92A93 /* Resources */,
 				8F24E01B23DB745D006094A3 /* Platforms */,
 				8F24E01723DB6F37006094A3 /* Domains */,
 				506FFDA023ACFFA40010AB29 /* AppDelegate.swift */,
@@ -216,6 +231,45 @@
 			path = CineCityUITests;
 			sourceTree = "<group>";
 		};
+		50C619B423F1435C00A92A93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50C619B723F1440900A92A93 /* Models */,
+				50C619B623F143F400A92A93 /* Calls */,
+				50C619B523F143ED00A92A93 /* Utils */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50C619B523F143ED00A92A93 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				50C619BC23F1446200A92A93 /* FilmUtils.swift */,
+				50C619CC23F1450800A92A93 /* BilletUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		50C619B623F143F400A92A93 /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				50C619BA23F1445500A92A93 /* FilmCall.swift */,
+				50C619C823F144F200A92A93 /* FilmCallAPI.swift */,
+				50C619C323F144BE00A92A93 /* BilletCall.swift */,
+				50C619CA23F144FB00A92A93 /* BilletCallAPI.swift */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		50C619B723F1440900A92A93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50C619B823F1443F00A92A93 /* Film.swift */,
+				50C619C123F144B400A92A93 /* Billet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		803E59C887540C64E563A8D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +291,6 @@
 		8F24E01823DB6F4C006094A3 /* Billets */ = {
 			isa = PBXGroup;
 			children = (
-				8F24E01923DB6FF7006094A3 /* Billet.swift */,
 				8F24E02023DB7538006094A3 /* BilletService.swift */,
 			);
 			path = Billets;
@@ -516,19 +569,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F24E01A23DB6FF7006094A3 /* Billet.swift in Sources */,
 				506FFDA123ACFFA40010AB29 /* AppDelegate.swift in Sources */,
 				8F24E05C23EB655F006094A3 /* BilletsListViewController.swift in Sources */,
+				50C619C223F144B400A92A93 /* Billet.swift in Sources */,
+				50C619BD23F1446200A92A93 /* FilmUtils.swift in Sources */,
+				50C619C423F144BE00A92A93 /* BilletCall.swift in Sources */,
 				8F24E01F23DB74AD006094A3 /* BilletsMockService.swift in Sources */,
 				8F24E05B23EB655F006094A3 /* LoginViewController.swift in Sources */,
+				50C619BB23F1445500A92A93 /* FilmCall.swift in Sources */,
 				9856B3EF23F012CE009210EC /* EventsViewController.swift in Sources */,
 				CE555FFA23EDC3C200D9AC71 /* PastReservationsListViewController.swift in Sources */,
 				8F24E00923C757AE006094A3 /* HomeViewController.swift in Sources */,
+				50C619CB23F144FB00A92A93 /* BilletCallAPI.swift in Sources */,
 				9856B3F323F01438009210EC /* AdminLoginViewController.swift in Sources */,
+				50C619C923F144F200A92A93 /* FilmCallAPI.swift in Sources */,
 				CE555FFE23EDC73500D9AC71 /* PastReservationsTableViewCell.swift in Sources */,
+				50C619CD23F1450800A92A93 /* BilletUtils.swift in Sources */,
 				8F24E06E23ED9407006094A3 /* SignUpViewController.swift in Sources */,
 				8F24E02123DB7538006094A3 /* BilletService.swift in Sources */,
 				8F24E01523DB666E006094A3 /* BilletsTableViewCell.swift in Sources */,
+				50C619B923F1443F00A92A93 /* Film.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

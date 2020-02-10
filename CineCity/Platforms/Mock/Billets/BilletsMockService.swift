@@ -11,8 +11,8 @@ import Foundation
 class BilletsMockService: BilletService {
     
     private let billets: [Billet] = [
-        Billet(id:"1" ,film: "Star Wars: The Force Awakens", time: "18:30" , date: "24/01/2020"),
-        Billet(id:"2" , film: "2001: A Space Odessey", time: "20:00", date: "25/01/2020" )
+        /*Billet(id:"1" ,film: "Star Wars: The Force Awakens", date: "24/01/2020", time: "18:30"),
+        Billet(id:"2" , film: "2001: A Space Odessey", date: "25/01/2020", time: "20:00" )*/
     ]
     
     
@@ -22,7 +22,7 @@ class BilletsMockService: BilletService {
     
     func getById(_ id: String, completion: @escaping (Billet?) -> Void) {
         completion(self.billets.first(where: { (r) -> Bool in
-            return r.id == id
+            return r.id == 0
         }))
     }
     
