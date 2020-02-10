@@ -41,7 +41,6 @@ class PastReservationsListViewController: UIViewController, UITableViewDelegate,
     override func viewDidAppear(_ animated: Bool) {
         self.billetsService.all { (billets) in
             self.reservations = billets
-            print(self.reservations)
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,7 +51,7 @@ class PastReservationsListViewController: UIViewController, UITableViewDelegate,
         let cell = tableView.dequeueReusableCell(withIdentifier: PastReservationsListViewController.ReservationsTableViewCellId, for: indexPath) as! PastReservationsTableViewCell
         let billet = self.reservations[indexPath.row]
         cell.titleLabel.text = billet.film.title
-        cell.dateLabel.text = "une date"
+        cell.dateLabel.text = DateUtils.toString(date: billet.date)
         cell.timeLabel.text = billet.time
         return cell
     }

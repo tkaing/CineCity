@@ -20,6 +20,7 @@
 		50C619C923F144F200A92A93 /* FilmCallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619C823F144F200A92A93 /* FilmCallAPI.swift */; };
 		50C619CB23F144FB00A92A93 /* BilletCallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619CA23F144FB00A92A93 /* BilletCallAPI.swift */; };
 		50C619CD23F1450800A92A93 /* BilletUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619CC23F1450800A92A93 /* BilletUtils.swift */; };
+		50C619CF23F2159C00A92A93 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C619CE23F2159C00A92A93 /* DateUtils.swift */; };
 		8F24E00923C757AE006094A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E00723C757AE006094A3 /* HomeViewController.swift */; };
 		8F24E00A23C757AE006094A3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E00823C757AE006094A3 /* HomeViewController.xib */; };
 		8F24E01523DB666E006094A3 /* BilletsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E01323DB666E006094A3 /* BilletsTableViewCell.swift */; };
@@ -87,6 +88,7 @@
 		50C619C823F144F200A92A93 /* FilmCallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCallAPI.swift; sourceTree = "<group>"; };
 		50C619CA23F144FB00A92A93 /* BilletCallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletCallAPI.swift; sourceTree = "<group>"; };
 		50C619CC23F1450800A92A93 /* BilletUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletUtils.swift; sourceTree = "<group>"; };
+		50C619CE23F2159C00A92A93 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		550712175857818AC329813A /* Pods-CineCityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineCityTests.debug.xcconfig"; path = "Target Support Files/Pods-CineCityTests/Pods-CineCityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7ACCF3D420863C6298240FC3 /* Pods_CineCityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineCityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F24E00723C757AE006094A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			children = (
 				50C619BC23F1446200A92A93 /* FilmUtils.swift */,
 				50C619CC23F1450800A92A93 /* BilletUtils.swift */,
+				50C619CE23F2159C00A92A93 /* DateUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				8F24E05C23EB655F006094A3 /* BilletsListViewController.swift in Sources */,
 				50C619C223F144B400A92A93 /* Billet.swift in Sources */,
 				50C619BD23F1446200A92A93 /* FilmUtils.swift in Sources */,
+				50C619CF23F2159C00A92A93 /* DateUtils.swift in Sources */,
 				50C619C423F144BE00A92A93 /* BilletCall.swift in Sources */,
 				8F24E01F23DB74AD006094A3 /* BilletsMockService.swift in Sources */,
 				8F24E05B23EB655F006094A3 /* LoginViewController.swift in Sources */,

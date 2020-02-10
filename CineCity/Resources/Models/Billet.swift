@@ -18,7 +18,7 @@ struct Billet {
     func dictionnary() -> [String : Any] {
         return [
             "id": self.id,
-            "film": self.film,
+            "film": self.film.dictionnary(),
             "date": self.date,
             "time": self.time
         ]

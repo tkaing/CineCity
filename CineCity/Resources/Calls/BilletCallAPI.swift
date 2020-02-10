@@ -12,10 +12,6 @@ class BilletCallAPI: BilletCall {
     
     private let url: String = "http://tchooz.fr/ticket"
     
-    var filmCall: FilmCall {
-        return FilmCallAPI()
-    }
-    
     func all(completion: @escaping ([Billet]) -> Void) {
         Alamofire.request(self.url + "/all", method: .get).responseJSON { (request) in
             guard

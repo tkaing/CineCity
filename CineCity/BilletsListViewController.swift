@@ -63,7 +63,7 @@ class BilletsListViewController: UIViewController, UITableViewDelegate, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: BilletsListViewController.BilletsTableViewCellId, for: indexPath) as! BilletsTableViewCell
         let billet = self.billets[indexPath.row]
         cell.titleLabel.text = billet.film.title
-        cell.dateLabel.text = "une date"
+        cell.dateLabel.text = DateUtils.toString(date: billet.date)
         cell.timeLabel.text = billet.time
         return cell
     }
