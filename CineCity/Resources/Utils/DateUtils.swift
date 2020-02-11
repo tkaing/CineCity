@@ -16,7 +16,7 @@ class DateUtils {
         return dateFormatter
     }
     
-    static func toDate(date: String) -> Date? {
+    static func map(date: String) -> Date? {
         return DateUtils.formatter.date(from: date)
     }
     

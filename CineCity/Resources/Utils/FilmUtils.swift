@@ -13,10 +13,12 @@ class FilmUtils {
     static func map(item: [String:Any]) -> Film? {
         guard
             let id = item["id"] as? Int,
-            let title = item["title"] as? String
+            let title = item["title"] as? String,
+            let releaseDate = item["releaseDate"] as? String,
+            let releaseDateObject = DateUtils.map(date: releaseDate)
         else {
             return nil
         }
-        return Film(id: id, title: title)
+        return Film(id: id, title: title, releaseDate: releaseDateObject)
     }
 }

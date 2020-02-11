@@ -11,16 +11,18 @@ import Foundation
 struct Billet {
     
     var id: Int
-    var film: Film
-    var date: Date
     var time: String
+    var date: Date
+    var film: Film
+    var user: User
     
     func dictionnary() -> [String : Any] {
         return [
             "id": self.id,
-            "film": self.film.dictionnary(),
+            "time": self.time,
             "date": self.date,
-            "time": self.time
+            "film": self.film.dictionnary(),
+            "user": self.user.dictionnary()
         ]
     }
 }

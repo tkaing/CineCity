@@ -10,93 +10,64 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet var img_films: UIImageView!
-    @IBOutlet var img_salles: UIImageView!
-    @IBOutlet var img_seances: UIImageView!
-    @IBOutlet var img_billets: UIImageView!
-    @IBOutlet var affiche_button: UIButton!
-    @IBOutlet var prochainement_button: UIButton!
-    @IBOutlet var films_button: UIButton!
-    @IBOutlet var events_button: UIButton!
-    @IBOutlet var billets_button: UIButton!
-    
+    @IBOutlet var buttonNow: UIButton!
+    @IBOutlet var buttonSoon: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.initNavigation(title: "CinéCity")
+    }
+    
+    @IBAction func pressNow(_ sender: UIButton) {
+        
+    }
+    @IBAction func pressSoon(_ sender: UIButton) {
+        
+    }
+   
+    @IBAction func pressGoFilm(_ sender: UIButton) {
+        FooterUtils.films(view: self)
+    }
+    @IBAction func pressGoEvent(_ sender: UIButton) {
+        FooterUtils.events(view: self)
+    }
+    @IBAction func pressGoBillet(_ sender: UIButton) {
+        FooterUtils.billets(view: self)
+    }
+}
+
+extension UIViewController {
+    
+    func initNavigation(title: String) {
+        
         let nav = self.navigationController?.navigationBar
-          nav?.isTranslucent = false
-          nav?.barStyle = UIBarStyle.black
-          navigationItem.title = "CinéCity"
-          let textChangeColor = [NSAttributedString.Key.foregroundColor:UIColor.white]
-          navigationController?.navigationBar.titleTextAttributes = textChangeColor
+        nav?.isTranslucent = false
+        nav?.barStyle = UIBarStyle.black
+        
+        self.navigationItem.title = title
+        
+        let textChangeColor = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = textChangeColor
         
         self.navigationItem.leftBarButtonItems = [
-            UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(touchSearchButton)),
+            UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.search)),
         ]
-        
         self.navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(touchProfileButton))
+            UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(self.profile))
         ]
-
     }
-    
-    @objc func touchSearchButton() {
-        //let mapViewController = RestaurantMapViewController()
-        //self.navigationController?.pushViewController(mapViewController, animated: true)
-    }
-    
-    @objc func touchProfileButton() {
-        let loginViewController = LoginViewController()
-        self.navigationController?.pushViewController(loginViewController, animated: true)
-        //let createViewController = RestaurantCreateViewController()
-        //self.present(createViewController, animated: true)
-
-    }
-    
-    @IBAction func touchAfficheButton() {
-    }
-    
-    
-    @IBAction func touchProchainementButton() {
-    }
-    
-    @IBAction func touchFilmsButton() {
-    }
-    
-    @IBAction func touchEventsButton() {
-        let eventsViewController = EventsViewController()
-        self.navigationController?.pushViewController(eventsViewController, animated: true)
-    }
-    
-    @IBAction func touchBilletsButton() {
+    @objc func search() {
         
-        let billetViewController = PastReservationsListViewController()
-        self.navigationController?.pushViewController(billetViewController, animated: true)
     }
-    /*let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.imgAction))
-
-    ImageViewName.addGestureRecognizer(tap)
     
-    @objc func imgAction(){
-
-    // perform the action here
-    }*/
-    
-
-        
-        
-
-    
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func profile() {
+        if UserUtils.user.email != "" {
+            if UserUtils.user.email == UserUtils.getModeAdministrator().email { self.navigationController?.pushViewController(AdminLoginViewController(), animated: true)
+            } else {
+                self.navigationController?.pushViewController(ProfileViewController(), animated: true)
+            }
+        } else {
+            self.navigationController?.pushViewController(LoginViewController(), animated: true)
+        }
     }
-    */
-
 }

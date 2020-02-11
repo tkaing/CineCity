@@ -17,31 +17,37 @@ class LoginViewController: UIViewController {
     @IBOutlet var btn_login: UIButton!
     @IBOutlet var signUp_button: UIButton!
     
+    var userCall: UserCall {
+        return UserCallAPI()
+    }
     
     @IBAction func press_login(_ sender: Any) {
         guard
             let USERNAME = self.textfield_username.text,
             let PASSWORD = self.textfield_password.text
-            else { return }
+        else { return }
+        
         if self.formValidation(username: USERNAME, password: PASSWORD) {
-            //let lo = Loading()
-            //self.redirectTo(from: self, to: lo)
-            let parameters = [
-                "username": USERNAME,
-                "password": PASSWORD
-            ]
-            /*UserService.default.authenticate(data: parameters) { (item) in
-                if let user = item {
-                    let to = Home()
-                    self.redirectTo(from: lo, to: to)
-                    ActiveManager.activeUser = user
-                    self.alert(title: "Connexion réussie", message: "Bienvenue chez Augarde : \(user.username) !")
-                } else {
-                    let to = Login()
-                    self.redirectTo(from: lo, to: to)
-                    self.alert(title: "Échec lors de la connexion", message: "Oups ! Les identifiants semblent incorrect")
+          
+            self.btn_login.isUserInteractionEnabled = false
+          
+            self.userCall.all { (users) in
+                // User (Normal)
+                for user in users {
+                    if user.email == USERNAME && user.password == PASSWORD {
+                        UserUtils.user = user
+                        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                    }
                 }
-            }*/
+                // User (Administrator)
+                let admin = UserUtils.getModeAdministrator()
+                if admin.email == USERNAME && admin.password == PASSWORD {
+                    UserUtils.user = admin
+                    self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                }
+                self.btn_login.isUserInteractionEnabled = true
+            }
+           
         } else {
             self.alert(title: "Login failed!", message: "The form is not valid!")
         }
@@ -97,7 +103,6 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     func formValidation(username: String, password: String) -> Bool {
-        
         return username != "" && password != ""
     }
     

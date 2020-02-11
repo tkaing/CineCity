@@ -12,11 +12,13 @@ struct Film {
     
     var id: Int
     var title: String
+    var releaseDate: Date
     
     func dictionnary() -> [String : Any] {
         return [
             "id": self.id,
-            "title": self.title
+            "title": self.title,
+            "releaseDate": DateUtils.toString(date: self.releaseDate)
         ]
     }
 }

@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CineCity" customModuleProvider="target">
             <connections>
-                <outlet property="affiche_button" destination="1Nu-c5-2nd" id="mQS-TJ-A98"/>
-                <outlet property="billets_button" destination="YXg-wA-RNn" id="osP-JO-iDI"/>
-                <outlet property="events_button" destination="Nh0-9f-bvI" id="gbN-AJ-DGu"/>
-                <outlet property="films_button" destination="wed-Ri-FFv" id="CwY-qP-jM9"/>
-                <outlet property="prochainement_button" destination="1Nu-c5-2nd" id="3Gv-fj-PiW"/>
+                <outlet property="buttonNow" destination="qcY-ed-gTb" id="9lY-lK-urc"/>
+                <outlet property="buttonSoon" destination="1Nu-c5-2nd" id="nKe-78-WTL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,77 +21,147 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcY-ed-gTb">
-                    <rect key="frame" x="77" y="64" width="100" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="XG8-Yx-EoE"/>
-                        <constraint firstAttribute="height" constant="50" id="nDh-WP-saC"/>
-                    </constraints>
-                    <state key="normal" title="A l'affiche"/>
+                    <rect key="frame" x="0.0" y="84" width="199" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="À l'affiche">
+                        <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </state>
                     <connections>
-                        <action selector="touchAfficheButton" destination="-1" eventType="touchUpInside" id="hf4-La-set"/>
-                        <action selector="touchAfficheButton:" destination="-1" eventType="touchUpInside" id="PNG-Y2-ZmT"/>
+                        <action selector="pressNow:" destination="-1" eventType="touchUpInside" id="zJz-je-cST"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nu-c5-2nd">
-                    <rect key="frame" x="249" y="64" width="120" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="3yt-Nq-MvT"/>
-                        <constraint firstAttribute="height" constant="50" id="CIe-F0-eoy"/>
-                    </constraints>
-                    <state key="normal" title="Prochainement"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nu-c5-2nd">
+                    <rect key="frame" x="215" y="84" width="199" height="34"/>
+                    <state key="normal" title="Prochainement">
+                        <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </state>
                     <connections>
-                        <action selector="touchProchainementButton" destination="-1" eventType="touchUpInside" id="OWP-Q0-mLq"/>
+                        <action selector="pressSoon:" destination="-1" eventType="touchUpInside" id="fDd-T5-8Rv"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wed-Ri-FFv">
-                    <rect key="frame" x="100" y="767" width="75" height="75"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss3-lL-5mc">
+                    <rect key="frame" x="207" y="94" width="0.0" height="0.0"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="75" id="PcR-hT-Wrz"/>
-                        <constraint firstAttribute="height" constant="75" id="vTw-94-j6n"/>
+                        <constraint firstAttribute="width" id="mKA-0r-gyG"/>
                     </constraints>
-                    <state key="normal" title="Films"/>
-                    <connections>
-                        <action selector="touchFilmsButton" destination="-1" eventType="touchUpInside" id="mHh-G8-rFB"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nh0-9f-bvI">
-                    <rect key="frame" x="175" y="767" width="75" height="75"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wdT-kH-H2Y">
+                    <rect key="frame" x="0.0" y="138" width="414" height="618"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uR5-kh-AeG">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egl-gI-618">
+                    <rect key="frame" x="0.0" y="776" width="414" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salles" translatesAutoresizingMaskIntoConstraints="NO" id="VFY-np-IMk">
+                            <rect key="frame" x="182" y="0.0" width="50" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="WCk-pb-p0u"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="films" translatesAutoresizingMaskIntoConstraints="NO" id="lOr-tC-xh1">
+                            <rect key="frame" x="50" y="0.0" width="50" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Rt3-rs-gcP"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTo-me-l00">
+                            <rect key="frame" x="157" y="70" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="PQ5-0Z-HqO"/>
+                            </constraints>
+                            <state key="normal" title="Évènements">
+                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="pressGoEvent:" destination="-1" eventType="touchUpInside" id="HbY-L7-zmU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-38-HG7">
+                            <rect key="frame" x="50" y="70" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="BwA-cL-CYG"/>
+                            </constraints>
+                            <state key="normal" title="Films">
+                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="pressGoFilm:" destination="-1" eventType="touchUpInside" id="pJ1-zw-39i"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="billets" translatesAutoresizingMaskIntoConstraints="NO" id="9rL-0i-CsX">
+                            <rect key="frame" x="314" y="0.0" width="50" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="pJB-0j-H5K"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhV-8m-CQt">
+                            <rect key="frame" x="314" y="70" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Cle-LI-tW8"/>
+                            </constraints>
+                            <state key="normal" title="Billets">
+                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="pressGoBillet:" destination="-1" eventType="touchUpInside" id="pJe-qQ-3Wc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="75" id="6ql-L9-kHV"/>
-                        <constraint firstAttribute="width" constant="75" id="iPs-SQ-7og"/>
+                        <constraint firstItem="lOr-tC-xh1" firstAttribute="top" secondItem="egl-gI-618" secondAttribute="top" id="4Au-q9-Ha9"/>
+                        <constraint firstItem="WQ8-38-HG7" firstAttribute="top" secondItem="lOr-tC-xh1" secondAttribute="bottom" id="96f-7f-cLA"/>
+                        <constraint firstAttribute="bottom" secondItem="PTo-me-l00" secondAttribute="bottom" id="C3S-tG-aJz"/>
+                        <constraint firstItem="PTo-me-l00" firstAttribute="centerX" secondItem="egl-gI-618" secondAttribute="centerX" id="FQy-2q-4r2"/>
+                        <constraint firstAttribute="trailing" secondItem="9rL-0i-CsX" secondAttribute="trailing" constant="50" id="GP5-b9-PVN"/>
+                        <constraint firstAttribute="height" constant="100" id="Tae-of-CPo"/>
+                        <constraint firstAttribute="trailing" secondItem="ZhV-8m-CQt" secondAttribute="trailing" constant="50" id="VfV-Zd-rxI"/>
+                        <constraint firstItem="9rL-0i-CsX" firstAttribute="top" secondItem="egl-gI-618" secondAttribute="top" id="WBe-nw-YtA"/>
+                        <constraint firstAttribute="bottom" secondItem="WQ8-38-HG7" secondAttribute="bottom" id="Wry-XV-hu1"/>
+                        <constraint firstItem="PTo-me-l00" firstAttribute="top" secondItem="VFY-np-IMk" secondAttribute="bottom" id="hKK-QJ-4Pc"/>
+                        <constraint firstItem="VFY-np-IMk" firstAttribute="centerX" secondItem="egl-gI-618" secondAttribute="centerX" id="pTM-ah-ozI"/>
+                        <constraint firstItem="ZhV-8m-CQt" firstAttribute="top" secondItem="9rL-0i-CsX" secondAttribute="bottom" id="qpV-Hi-f17"/>
+                        <constraint firstAttribute="bottom" secondItem="ZhV-8m-CQt" secondAttribute="bottom" id="uGq-T7-2Pc"/>
+                        <constraint firstItem="WQ8-38-HG7" firstAttribute="leading" secondItem="egl-gI-618" secondAttribute="leading" constant="50" id="vOe-HZ-fSZ"/>
+                        <constraint firstItem="VFY-np-IMk" firstAttribute="top" secondItem="egl-gI-618" secondAttribute="top" id="zA8-Zr-NS6"/>
+                        <constraint firstItem="lOr-tC-xh1" firstAttribute="leading" secondItem="egl-gI-618" secondAttribute="leading" constant="50" id="zT2-z3-i1W"/>
                     </constraints>
-                    <state key="normal" title="Events"/>
-                    <connections>
-                        <action selector="touchEventsButton" destination="-1" eventType="touchUpInside" id="4tK-4G-OXL"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXg-wA-RNn">
-                    <rect key="frame" x="250" y="767" width="75" height="75"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="75" id="J2X-67-XYb"/>
-                        <constraint firstAttribute="width" constant="75" id="UBB-Dz-duG"/>
-                    </constraints>
-                    <state key="normal" title="Billets"/>
-                    <connections>
-                        <action selector="touchBilletsButton" destination="-1" eventType="touchUpInside" id="HTu-wu-TdY"/>
-                    </connections>
-                </button>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="mcL-h4-HGy" firstAttribute="bottom" secondItem="YXg-wA-RNn" secondAttribute="bottom" constant="20" id="3Nx-Fw-w91"/>
-                <constraint firstItem="YXg-wA-RNn" firstAttribute="leading" secondItem="Nh0-9f-bvI" secondAttribute="trailing" id="91P-Yd-63U"/>
-                <constraint firstItem="qcY-ed-gTb" firstAttribute="top" secondItem="mcL-h4-HGy" secondAttribute="top" constant="20" id="Khp-TF-Vek"/>
-                <constraint firstItem="1Nu-c5-2nd" firstAttribute="top" secondItem="mcL-h4-HGy" secondAttribute="top" constant="20" id="VnJ-H0-KN4"/>
-                <constraint firstItem="wed-Ri-FFv" firstAttribute="leading" secondItem="mcL-h4-HGy" secondAttribute="leading" constant="100" id="kh2-JA-8u2"/>
-                <constraint firstItem="Nh0-9f-bvI" firstAttribute="leading" secondItem="wed-Ri-FFv" secondAttribute="trailing" id="nST-qe-yO7"/>
-                <constraint firstItem="mcL-h4-HGy" firstAttribute="bottom" secondItem="wed-Ri-FFv" secondAttribute="bottom" constant="20" id="pQF-dW-Q9e"/>
-                <constraint firstItem="qcY-ed-gTb" firstAttribute="leading" secondItem="mcL-h4-HGy" secondAttribute="leading" constant="77" id="snI-vz-Pzi"/>
-                <constraint firstItem="mcL-h4-HGy" firstAttribute="bottom" secondItem="Nh0-9f-bvI" secondAttribute="bottom" constant="20" id="uF6-Oo-OGg"/>
-                <constraint firstItem="1Nu-c5-2nd" firstAttribute="leading" secondItem="qcY-ed-gTb" secondAttribute="trailing" constant="72" id="w4i-U2-gnq"/>
+                <constraint firstItem="qcY-ed-gTb" firstAttribute="top" secondItem="mcL-h4-HGy" secondAttribute="top" constant="40" id="4Bj-QI-o1p"/>
+                <constraint firstItem="Ss3-lL-5mc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9vL-cj-GVd"/>
+                <constraint firstItem="mcL-h4-HGy" firstAttribute="trailing" secondItem="egl-gI-618" secondAttribute="trailing" id="ABw-QQ-TAW"/>
+                <constraint firstItem="qcY-ed-gTb" firstAttribute="leading" secondItem="mcL-h4-HGy" secondAttribute="leading" id="Cd8-nS-ZJJ"/>
+                <constraint firstItem="1Nu-c5-2nd" firstAttribute="top" secondItem="mcL-h4-HGy" secondAttribute="top" constant="40" id="Iq6-3x-itu"/>
+                <constraint firstItem="mcL-h4-HGy" firstAttribute="trailing" secondItem="wdT-kH-H2Y" secondAttribute="trailing" id="LLi-Bp-Af8"/>
+                <constraint firstItem="egl-gI-618" firstAttribute="top" secondItem="wdT-kH-H2Y" secondAttribute="bottom" constant="20" id="T7X-94-EUA"/>
+                <constraint firstItem="1Nu-c5-2nd" firstAttribute="leading" secondItem="Ss3-lL-5mc" secondAttribute="trailing" constant="8" symbolic="YES" id="WRB-j9-xM8"/>
+                <constraint firstAttribute="bottom" secondItem="egl-gI-618" secondAttribute="bottom" constant="20" symbolic="YES" id="eaD-QE-LV6"/>
+                <constraint firstItem="mcL-h4-HGy" firstAttribute="trailing" secondItem="1Nu-c5-2nd" secondAttribute="trailing" id="gbw-Cv-2IP"/>
+                <constraint firstItem="wdT-kH-H2Y" firstAttribute="top" secondItem="1Nu-c5-2nd" secondAttribute="bottom" constant="20" id="i09-Yc-W5i"/>
+                <constraint firstItem="egl-gI-618" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nmw-v1-Lig"/>
+                <constraint firstItem="Ss3-lL-5mc" firstAttribute="top" secondItem="mcL-h4-HGy" secondAttribute="top" constant="50" id="rHK-p9-4M5"/>
+                <constraint firstItem="wdT-kH-H2Y" firstAttribute="leading" secondItem="mcL-h4-HGy" secondAttribute="leading" id="v9O-CB-VJ4"/>
+                <constraint firstItem="Ss3-lL-5mc" firstAttribute="leading" secondItem="qcY-ed-gTb" secondAttribute="trailing" constant="8" symbolic="YES" id="vBe-d4-Bar"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="mcL-h4-HGy"/>
             <point key="canvasLocation" x="-149.27536231884059" y="239.73214285714283"/>
         </view>
     </objects>
+    <resources>
+        <image name="billets" width="1300" height="1300"/>
+        <image name="films" width="820" height="656"/>
+        <image name="salles" width="803" height="682"/>
+    </resources>
 </document>

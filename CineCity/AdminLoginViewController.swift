@@ -10,28 +10,40 @@ import UIKit
 
 class AdminLoginViewController: UIViewController {
 
+    @IBOutlet var labelEmail: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nav = self.navigationController?.navigationBar
           nav?.isTranslucent = false
           nav?.barStyle = UIBarStyle.black
-          navigationItem.title = "Admin"
+          navigationItem.title = "Profil Administrateur"
           let textChangeColor = [NSAttributedString.Key.foregroundColor:UIColor.white]
           navigationController?.navigationBar.titleTextAttributes = textChangeColor
-
-
-        // Do any additional setup after loading the view.
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func pressCreateFilm(_ sender: UIButton) {
+        present(AdminFilmViewController(), animated: true)
     }
-    */
+    @IBAction func pressCreateEvent(_ sender: UIButton) {
+        present(AdminEventViewController(), animated: true)
+    }
+    @IBAction func pressLogout(_ sender: UIButton) {
+        UserUtils.user = UserUtils.getModeNotLogged()
+        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+    }
+}
 
+extension UIImage {
+    func toBase64() -> String {
+        let imageData = self.pngData()!
+        return imageData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+    }
+}
+extension String {
+    func toBase64Image(data: String) -> UIImage {
+        let imageData = Data(base64Encoded: data, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)!
+        return UIImage(data: imageData)!
+    }
 }

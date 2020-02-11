@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,48 +22,142 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dKj-rR-ChE">
-                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <rect key="frame" x="0.0" y="138" width="414" height="618"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dp7-yn-a9n">
-                    <rect key="frame" x="33" y="56" width="175" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="175" id="wnF-nX-sZD"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <state key="normal" title="Past"/>
+                    <rect key="frame" x="0.0" y="84" width="207" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Past">
+                        <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </state>
                     <connections>
                         <action selector="touch_past:" destination="-1" eventType="touchUpInside" id="Ljt-DJ-y4j"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPm-FK-Tuh">
-                    <rect key="frame" x="173" y="56" width="175" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="175" id="5nu-ud-i8a"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <state key="normal" title="Upcoming"/>
+                    <rect key="frame" x="207" y="84" width="207" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Upcoming">
+                        <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </state>
                     <connections>
                         <action selector="touch_upcoming:" destination="-1" eventType="touchUpInside" id="Dy6-Cw-9BH"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRk-0x-s1M">
+                    <rect key="frame" x="207" y="84" width="0.0" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="eik-3E-R2v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hw9-wM-aHJ">
+                    <rect key="frame" x="0.0" y="776" width="414" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salles" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-Fk-hrD">
+                            <rect key="frame" x="182" y="0.0" width="50" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="4rA-QJ-9LG"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="films" translatesAutoresizingMaskIntoConstraints="NO" id="UQJ-FR-fxf">
+                            <rect key="frame" x="50" y="0.0" width="50" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="aC6-0n-bsi"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45i-8Y-Oiv">
+                            <rect key="frame" x="157" y="70" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="mE8-Mh-Gcq"/>
+                            </constraints>
+                            <state key="normal" title="Évènements">
+                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="pressGoEvents:" destination="-1" eventType="touchUpInside" id="Iw0-jF-29t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGG-uA-B3D">
+                            <rect key="frame" x="50" y="70" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="muU-pr-Jqp"/>
+                            </constraints>
+                            <state key="normal" title="Films">
+                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="pressGoFilms:" destination="-1" eventType="touchUpInside" id="sXU-BL-Iha"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="billets" translatesAutoresizingMaskIntoConstraints="NO" id="ccB-lD-YVq">
+                            <rect key="frame" x="314" y="0.0" width="50" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="L5x-bD-hvf"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8s-sw-cHe">
+                            <rect key="frame" x="314" y="70" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="X9A-FT-FNz"/>
+                            </constraints>
+                            <state key="normal" title="Billets">
+                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="pressGoBillets:" destination="-1" eventType="touchUpInside" id="8Pc-cI-TCq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="nGG-uA-B3D" secondAttribute="bottom" id="9wv-or-Pvo"/>
+                        <constraint firstItem="J8s-sw-cHe" firstAttribute="top" secondItem="ccB-lD-YVq" secondAttribute="bottom" id="F35-vu-AMl"/>
+                        <constraint firstItem="UQJ-FR-fxf" firstAttribute="leading" secondItem="Hw9-wM-aHJ" secondAttribute="leading" constant="50" id="H90-vF-Zwy"/>
+                        <constraint firstAttribute="trailing" secondItem="J8s-sw-cHe" secondAttribute="trailing" constant="50" id="I1U-wg-orB"/>
+                        <constraint firstItem="lEO-Fk-hrD" firstAttribute="centerX" secondItem="Hw9-wM-aHJ" secondAttribute="centerX" id="Ias-6m-7Vt"/>
+                        <constraint firstItem="lEO-Fk-hrD" firstAttribute="top" secondItem="Hw9-wM-aHJ" secondAttribute="top" id="J5u-Wk-L62"/>
+                        <constraint firstItem="nGG-uA-B3D" firstAttribute="leading" secondItem="Hw9-wM-aHJ" secondAttribute="leading" constant="50" id="JVt-X0-9ua"/>
+                        <constraint firstItem="nGG-uA-B3D" firstAttribute="top" secondItem="UQJ-FR-fxf" secondAttribute="bottom" id="LVw-7i-baX"/>
+                        <constraint firstAttribute="height" constant="100" id="Ngh-db-4vA"/>
+                        <constraint firstAttribute="trailing" secondItem="ccB-lD-YVq" secondAttribute="trailing" constant="50" id="Yws-Or-qPx"/>
+                        <constraint firstItem="ccB-lD-YVq" firstAttribute="top" secondItem="Hw9-wM-aHJ" secondAttribute="top" id="aHr-U6-cAN"/>
+                        <constraint firstAttribute="bottom" secondItem="J8s-sw-cHe" secondAttribute="bottom" id="bA8-TU-tWE"/>
+                        <constraint firstItem="45i-8Y-Oiv" firstAttribute="centerX" secondItem="Hw9-wM-aHJ" secondAttribute="centerX" id="hBz-9r-jAh"/>
+                        <constraint firstItem="45i-8Y-Oiv" firstAttribute="top" secondItem="lEO-Fk-hrD" secondAttribute="bottom" id="o1y-pk-Lf0"/>
+                        <constraint firstAttribute="bottom" secondItem="45i-8Y-Oiv" secondAttribute="bottom" id="t4c-d4-Eav"/>
+                        <constraint firstItem="UQJ-FR-fxf" firstAttribute="top" secondItem="Hw9-wM-aHJ" secondAttribute="top" id="vef-dO-UiL"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dKj-rR-ChE" secondAttribute="bottom" id="4J3-Nl-RCQ"/>
-                <constraint firstItem="dp7-yn-a9n" firstAttribute="firstBaseline" secondItem="dPm-FK-Tuh" secondAttribute="firstBaseline" id="4ZW-2m-Ta2"/>
-                <constraint firstItem="dp7-yn-a9n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="CNf-Mq-qGW"/>
-                <constraint firstItem="dp7-yn-a9n" firstAttribute="baseline" secondItem="dPm-FK-Tuh" secondAttribute="baseline" id="Ijj-ik-Taa"/>
+                <constraint firstItem="wRk-0x-s1M" firstAttribute="leading" secondItem="dp7-yn-a9n" secondAttribute="trailing" id="7jn-us-uwD"/>
+                <constraint firstItem="dPm-FK-Tuh" firstAttribute="leading" secondItem="wRk-0x-s1M" secondAttribute="trailing" id="MFv-0Q-00E"/>
                 <constraint firstItem="dKj-rR-ChE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VNA-MQ-bqS"/>
-                <constraint firstItem="dp7-yn-a9n" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="WCs-0X-tn2"/>
-                <constraint firstItem="dKj-rR-ChE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="Ylg-C9-eON"/>
+                <constraint firstItem="Hw9-wM-aHJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YMt-gP-koB"/>
+                <constraint firstAttribute="bottom" secondItem="Hw9-wM-aHJ" secondAttribute="bottom" constant="20" symbolic="YES" id="YW7-C4-Khh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hw9-wM-aHJ" secondAttribute="trailing" id="ZEm-MP-7dK"/>
+                <constraint firstItem="wRk-0x-s1M" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="bog-wd-RIP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dKj-rR-ChE" secondAttribute="trailing" id="ch0-jd-VP8"/>
-                <constraint firstItem="dKj-rR-ChE" firstAttribute="top" secondItem="dp7-yn-a9n" secondAttribute="bottom" constant="8" symbolic="YES" id="sHg-JI-rwz"/>
-                <constraint firstItem="dPm-FK-Tuh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="173" id="uhS-nG-92K"/>
-                <constraint firstItem="dp7-yn-a9n" firstAttribute="top" secondItem="dPm-FK-Tuh" secondAttribute="top" id="wbt-tn-Igq"/>
+                <constraint firstItem="dp7-yn-a9n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="d8Y-iD-XnK"/>
+                <constraint firstItem="dp7-yn-a9n" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="k5W-pQ-iLR"/>
+                <constraint firstItem="dPm-FK-Tuh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="kCR-gi-suS"/>
+                <constraint firstItem="Hw9-wM-aHJ" firstAttribute="top" secondItem="dKj-rR-ChE" secondAttribute="bottom" constant="20" id="onr-E1-Mlm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dPm-FK-Tuh" secondAttribute="trailing" id="ooO-O9-ccm"/>
+                <constraint firstItem="dKj-rR-ChE" firstAttribute="top" secondItem="dPm-FK-Tuh" secondAttribute="bottom" constant="20" id="ptv-xs-bt3"/>
+                <constraint firstItem="wRk-0x-s1M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="skm-7O-VIa"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="131"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </view>
     </objects>
+    <resources>
+        <image name="billets" width="1300" height="1300"/>
+        <image name="films" width="820" height="656"/>
+        <image name="salles" width="803" height="682"/>
+    </resources>
 </document>

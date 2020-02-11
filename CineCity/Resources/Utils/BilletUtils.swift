@@ -16,11 +16,19 @@ class BilletUtils {
             let time = item["time"] as? String,
             let date = item["date"] as? String,
             let film = item["film"] as? [String:Any],
-            let dateObject = DateUtils.toDate(date: date),
-            let filmObject = FilmUtils.map(item: film)
+            let user = item["user"] as? [String:Any],
+            let dateObject = DateUtils.map(date: date),
+            let filmObject = FilmUtils.map(item: film),
+            let userObject = UserUtils.map(item: user)
         else {
             return nil
         }
-        return Billet(id: id, film: filmObject, date: dateObject, time: time)
+        return Billet(id: id, time: time, date: dateObject, film: filmObject, user: userObject)
+    }
+    
+    static func filterByUser(tickets: [Billet]) -> [Billet] {
+        return tickets.filter {
+            $0.user.id == UserUtils.user.id
+        }
     }
 }

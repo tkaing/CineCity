@@ -10,7 +10,6 @@ import UIKit
 
 class PastReservationsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
     public static let ReservationsTableViewCellId = "prtvc"
     @IBOutlet var reservationsList: UITableView!
     @IBOutlet var button_past: UIButton!
@@ -29,18 +28,15 @@ class PastReservationsListViewController: UIViewController, UITableViewDelegate,
     }
     
     var billetsService: BilletCall {
-           //return BilletsMockService()
-           return BilletCallAPI()
+        return BilletCallAPI()
     
     }
     var filmCall: FilmCall {
-           //return BilletsMockService()
-           return FilmCallAPI()
-    
+        return FilmCallAPI()
     }
     override func viewDidAppear(_ animated: Bool) {
         self.billetsService.all { (billets) in
-            self.reservations = billets
+            self.reservations = BilletUtils.filterByUser(tickets: billets)
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,28 +54,26 @@ class PastReservationsListViewController: UIViewController, UITableViewDelegate,
     
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+        self.initNavigation(title: "Billets")
+        
         self.reservationsList.rowHeight = 120
         self.reservationsList.backgroundColor = UIColor.clear
         self.reservationsList.register(UINib(nibName: "PastReservationsTableViewCell", bundle: nil), forCellReuseIdentifier: PastReservationsListViewController.ReservationsTableViewCellId)
         self.reservationsList.dataSource = self
         self.reservationsList.delegate = self
+        
         button_past.setTitle(NSLocalizedString("past", comment: ""), for: .normal)
         button_upcoming.setTitle(NSLocalizedString("upcoming", comment: ""), for: .normal)
-        
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func pressGoFilms(_ sender: UIButton) {
+        FooterUtils.films(view: self)
     }
-    */
-
+    @IBAction func pressGoEvents(_ sender: UIButton) {
+        FooterUtils.events(view: self)
+    }
+    @IBAction func pressGoBillets(_ sender: UIButton) {
+        FooterUtils.billets(view: self)
+    }
 }
