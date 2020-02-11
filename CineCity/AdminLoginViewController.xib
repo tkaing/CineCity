@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdminLoginViewController" customModule="CineCity" customModuleProvider="target">
             <connections>
+                <outlet property="button_add_event" destination="Cdm-8H-wmv" id="96d-ZB-NSO"/>
+                <outlet property="button_add_film" destination="cdq-40-VJi" id="43l-lI-LeU"/>
+                <outlet property="button_logout" destination="lTO-ag-Q2G" id="Kkv-cY-M1K"/>
                 <outlet property="labelEmail" destination="SlF-pn-Wva" id="AUi-NL-lpZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -11,6 +11,7 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     @IBOutlet var labelEmail: UILabel!
+    @IBOutlet var button_logout: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,8 @@ class ProfileViewController: UIViewController {
         let textChangeColor = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textChangeColor
         self.labelEmail.text = UserUtils.user.email
+        
+    button_logout.setTitle(NSLocalizedString("logout", comment: ""), for: .normal)
     }
 
     @IBAction func pressLogout(_ sender: UIButton) {

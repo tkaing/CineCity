@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="CineCity" customModuleProvider="target">
             <connections>
+                <outlet property="button_logout" destination="qzr-89-4kX" id="qNU-GG-p1f"/>
                 <outlet property="labelEmail" destination="O8T-Ai-ej6" id="bgn-AD-43q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

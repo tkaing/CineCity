@@ -10,7 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdminFilmViewController" customModule="CineCity" customModuleProvider="target">
             <connections>
+                <outlet property="add_film" destination="Zud-mI-f3q" id="L69-c3-CTk"/>
                 <outlet property="buttonSave" destination="5JW-WM-kZX" id="GPL-iM-vWO"/>
+                <outlet property="button_choose_cover" destination="4Vu-jy-ZJh" id="Ri5-jb-t64"/>
                 <outlet property="imageViewFilm" destination="xzo-W0-HWe" id="ceR-c4-P1D"/>
                 <outlet property="textReleaseDate" destination="rRD-lv-QBk" id="q6a-Xn-b0V"/>
                 <outlet property="textTitle" destination="6tW-cm-2Vh" id="irN-Jw-Ugf"/>

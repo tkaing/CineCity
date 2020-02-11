@@ -13,11 +13,23 @@ class HomeViewController: UIViewController {
     @IBOutlet var buttonNow: UIButton!
     @IBOutlet var buttonSoon: UIButton!
     @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var button_events: UIButton!
+    @IBOutlet var button_tickets: UIButton!
+    @IBOutlet var button_films: UIButton!
+    
+    
+    
     public static let collectionViewCellId = "cvc"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initNavigation(title: "CinéCity")
+        
+        buttonNow.setTitle(NSLocalizedString("outnow", comment: ""), for: .normal)
+        buttonSoon.setTitle(NSLocalizedString("outsoon", comment: ""), for: .normal)
+        button_events.setTitle(NSLocalizedString("events", comment: ""), for: .normal)
+        button_tickets.setTitle(NSLocalizedString("tickets", comment: ""), for: .normal)
+        button_films.setTitle(NSLocalizedString("films", comment: ""), for: .normal)
     }
     
     @IBAction func pressNow(_ sender: UIButton) {

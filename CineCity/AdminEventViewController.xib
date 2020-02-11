@@ -11,7 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdminEventViewController" customModule="CineCity" customModuleProvider="target">
             <connections>
                 <outlet property="buttonSave" destination="mBg-gu-it2" id="X9q-8o-vUf"/>
+                <outlet property="button_choose_cover" destination="Eir-aZ-0u8" id="cSu-lT-dd4"/>
                 <outlet property="imageViewEvent" destination="jV3-YI-Ei2" id="RJC-hH-Up5"/>
+                <outlet property="label_add_event" destination="hrH-yQ-VIa" id="hoT-jf-Gi7"/>
                 <outlet property="textCategory" destination="CKi-xV-kmv" id="juU-Q7-WHd"/>
                 <outlet property="textDescription" destination="lD7-pw-KXk" id="r6C-dv-BHV"/>
                 <outlet property="textTitle" destination="iSo-aW-FXA" id="oIs-xc-MD4"/>

@@ -2,11 +2,21 @@
   Localizable.strings
   CineCity
 
-  Created by Fabiana Montiel on 07/02/2020.
+  Created by Viviana Montiel on 07/02/2020.
   Copyright © 2020 Vtd. All rights reserved.
 */
-"login" = "SE CONNECTER";
+"login" = "Se Connecter";
+"logout" = "Déconnexion";
 "username" = "Utilisateur";
 "password" = "Mot de passe";
 "past" = "Précedents";
 "upcoming" = "Futurs";
+"films" = "Films";
+"events" = "Evènements";
+"tickets" = "Billets";
+"outnow" = "A l'affiche";
+"outsoon" = "Prochainement";
+"addfilm" = "Ajouter un film";
+"addevent" = "Ajouter un evènement";
+"save" = "Enregistrer";
+"choosecover" = "Choisir une couverture";

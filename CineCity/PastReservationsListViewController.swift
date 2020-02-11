@@ -2,7 +2,7 @@
 //  PastReservationsListViewController.swift
 //  CineCity
 //
-//  Created by Fabiana Montiel on 07/02/2020.
+//  Created by Viviana Montiel on 07/02/2020.
 //  Copyright © 2020 Vtd. All rights reserved.
 //
 
@@ -13,6 +13,9 @@ class PastReservationsListViewController: UIViewController {
     @IBOutlet var button_past: UIButton!
     @IBOutlet var button_upcoming: UIButton!
     @IBOutlet var reservationsList: UITableView!
+    @IBOutlet var button_films: UIButton!
+    @IBOutlet var button_events: UIButton!
+    @IBOutlet var button_tickets: UIButton!
     
     public static let reservationsTableViewCellId = "prtvc"
     
@@ -40,6 +43,10 @@ class PastReservationsListViewController: UIViewController {
         
         button_past.setTitle(NSLocalizedString("past", comment: ""), for: .normal)
         button_upcoming.setTitle(NSLocalizedString("upcoming", comment: ""), for: .normal)
+        
+        button_films.setTitle(NSLocalizedString("films", comment: ""), for: .normal)
+        button_events.setTitle(NSLocalizedString("events", comment: ""), for: .normal)
+        button_tickets.setTitle(NSLocalizedString("tickets", comment: ""), for: .normal)
     }
     override func viewDidAppear(_ animated: Bool) {
         self.billetsService.all { (billets) in

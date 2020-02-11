@@ -12,6 +12,9 @@
             <connections>
                 <outlet property="buttonNow" destination="qcY-ed-gTb" id="9lY-lK-urc"/>
                 <outlet property="buttonSoon" destination="1Nu-c5-2nd" id="nKe-78-WTL"/>
+                <outlet property="button_events" destination="PTo-me-l00" id="19x-sJ-fA0"/>
+                <outlet property="button_films" destination="WQ8-38-HG7" id="AfF-z2-Svq"/>
+                <outlet property="button_tickets" destination="ZhV-8m-CQt" id="EhY-vJ-q70"/>
                 <outlet property="collectionView" destination="wdT-kH-H2Y" id="63Z-QK-ykc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

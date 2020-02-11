@@ -15,9 +15,16 @@ class AdminEventViewController: UIViewController {
     @IBOutlet var textDescription: UITextView!
     @IBOutlet var buttonSave: UIButton!
     @IBOutlet var imageViewEvent: UIImageView!
+    @IBOutlet var label_add_event: UILabel!
+    @IBOutlet var button_choose_cover: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        buttonSave.setTitle(NSLocalizedString("save", comment: ""), for: .normal)
+        button_choose_cover.setTitle(NSLocalizedString("choosecover", comment: ""), for: .normal)
+        label_add_event.text = NSLocalizedString("addevent", comment: "")
+        
     }
     
     var eventCall: EventCall {

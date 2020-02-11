@@ -11,6 +11,9 @@ import UIKit
 class AdminLoginViewController: UIViewController {
 
     @IBOutlet var labelEmail: UILabel!
+    @IBOutlet var button_logout: UIButton!
+    @IBOutlet var button_add_film: UIButton!
+    @IBOutlet var button_add_event: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,10 @@ class AdminLoginViewController: UIViewController {
           navigationItem.title = "Profil Administrateur"
           let textChangeColor = [NSAttributedString.Key.foregroundColor:UIColor.white]
           navigationController?.navigationBar.titleTextAttributes = textChangeColor
+        
+        button_logout.setTitle(NSLocalizedString("logout", comment: ""), for: .normal)
+        button_add_film.setTitle(NSLocalizedString("addfilm", comment: ""), for: .normal)
+        button_add_event.setTitle(NSLocalizedString("addevent", comment: ""), for: .normal)
     }
 
     

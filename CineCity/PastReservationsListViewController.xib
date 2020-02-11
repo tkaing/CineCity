@@ -10,7 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PastReservationsListViewController" customModule="CineCity" customModuleProvider="target">
             <connections>
+                <outlet property="button_events" destination="45i-8Y-Oiv" id="ev8-yP-m8N"/>
+                <outlet property="button_films" destination="nGG-uA-B3D" id="KiM-la-BoO"/>
                 <outlet property="button_past" destination="dp7-yn-a9n" id="pv3-RJ-06L"/>
+                <outlet property="button_tickets" destination="J8s-sw-cHe" id="sOo-L0-zfi"/>
                 <outlet property="button_upcoming" destination="dPm-FK-Tuh" id="Gdp-3A-8Pe"/>
                 <outlet property="reservationsList" destination="dKj-rR-ChE" id="idV-fS-PYr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

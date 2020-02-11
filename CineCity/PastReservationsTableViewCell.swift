@@ -2,7 +2,7 @@
 //  PastReservationsTableViewCell.swift
 //  CineCity
 //
-//  Created by Fabiana Montiel on 07/02/2020.
+//  Created by Viviana Montiel on 07/02/2020.
 //  Copyright © 2020 Vtd. All rights reserved.
 //
 

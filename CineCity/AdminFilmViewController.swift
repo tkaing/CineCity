@@ -14,10 +14,15 @@ class AdminFilmViewController: UIViewController {
     @IBOutlet var textReleaseDate: UITextField!
     @IBOutlet var buttonSave: UIButton!
     @IBOutlet var imageViewFilm: UIImageView!
+    @IBOutlet var add_film: UILabel!
+    @IBOutlet var button_choose_cover: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        buttonSave.setTitle(NSLocalizedString("save", comment: ""), for: .normal)
+        button_choose_cover.setTitle(NSLocalizedString("choosecover", comment: ""), for: .normal)
+        add_film.text = NSLocalizedString("addfilm", comment: "")
     }
     
     var filmCall: FilmCall {

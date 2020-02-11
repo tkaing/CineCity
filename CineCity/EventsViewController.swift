@@ -10,9 +10,18 @@ import UIKit
 
 class EventsViewController: UIViewController {
 
+    @IBOutlet var button_films: UIButton!
+    @IBOutlet var button_events: UIButton!
+    @IBOutlet var button_tickets: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initNavigation(title: "Évènements")
+        
+        button_films.setTitle(NSLocalizedString("films", comment: ""), for: .normal)
+        button_events.setTitle(NSLocalizedString("events", comment: ""), for: .normal)
+        button_tickets.setTitle(NSLocalizedString("tickets", comment: ""), for: .normal)
+        
     }
     
     @IBAction func pressGoFilms(_ sender: UIButton) {
