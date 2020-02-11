@@ -8,50 +8,25 @@
 
 import UIKit
 
-class PastReservationsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PastReservationsListViewController: UIViewController {
     
-    public static let ReservationsTableViewCellId = "prtvc"
-    @IBOutlet var reservationsList: UITableView!
     @IBOutlet var button_past: UIButton!
     @IBOutlet var button_upcoming: UIButton!
+    @IBOutlet var reservationsList: UITableView!
     
+    public static let reservationsTableViewCellId = "prtvc"
+    
+    var filmCall: FilmCall {
+        return FilmCallAPI()
+    }
+    var billetsService: BilletCall {
+        return BilletCallAPI()
+    }
     var reservations: [Billet] = [] {
         didSet {
             self.reservationsList.reloadData()
         }
     }
-    
-    @IBAction func touch_past(_ sender: Any) {
-    }
-    
-    @IBAction func touch_upcoming(_ sender: Any) {
-    }
-    
-    var billetsService: BilletCall {
-        return BilletCallAPI()
-    
-    }
-    var filmCall: FilmCall {
-        return FilmCallAPI()
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        self.billetsService.all { (billets) in
-            self.reservations = BilletUtils.filterByUser(tickets: billets)
-        }
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.reservations.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: PastReservationsListViewController.ReservationsTableViewCellId, for: indexPath) as! PastReservationsTableViewCell
-        let billet = self.reservations[indexPath.row]
-        cell.titleLabel.text = billet.film.title
-        cell.dateLabel.text = DateUtils.toString(date: billet.date)
-        cell.timeLabel.text = billet.time
-        return cell
-    }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,12 +34,23 @@ class PastReservationsListViewController: UIViewController, UITableViewDelegate,
         
         self.reservationsList.rowHeight = 120
         self.reservationsList.backgroundColor = UIColor.clear
-        self.reservationsList.register(UINib(nibName: "PastReservationsTableViewCell", bundle: nil), forCellReuseIdentifier: PastReservationsListViewController.ReservationsTableViewCellId)
+        self.reservationsList.register(UINib(nibName: "PastReservationsTableViewCell", bundle: nil), forCellReuseIdentifier: PastReservationsListViewController.reservationsTableViewCellId)
         self.reservationsList.dataSource = self
         self.reservationsList.delegate = self
         
         button_past.setTitle(NSLocalizedString("past", comment: ""), for: .normal)
         button_upcoming.setTitle(NSLocalizedString("upcoming", comment: ""), for: .normal)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        self.billetsService.all { (billets) in
+            self.reservations = BilletUtils.filterByUser(tickets: billets)
+        }
+    }
+    
+    @IBAction func touch_past(_ sender: Any) {
+    }
+    
+    @IBAction func touch_upcoming(_ sender: Any) {
     }
     
     @IBAction func pressGoFilms(_ sender: UIButton) {
@@ -75,5 +61,21 @@ class PastReservationsListViewController: UIViewController, UITableViewDelegate,
     }
     @IBAction func pressGoBillets(_ sender: UIButton) {
         FooterUtils.billets(view: self)
+    }
+}
+
+extension PastReservationsListViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.reservations.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: PastReservationsListViewController.reservationsTableViewCellId, for: indexPath) as! PastReservationsTableViewCell
+        let billet = self.reservations[indexPath.row]
+        cell.titleLabel.text = billet.film.title
+        cell.dateLabel.text = DateUtils.toString(date: billet.date)
+        cell.timeLabel.text = billet.time
+        return cell
     }
 }

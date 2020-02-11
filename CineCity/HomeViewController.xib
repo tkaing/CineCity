@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="buttonNow" destination="qcY-ed-gTb" id="9lY-lK-urc"/>
                 <outlet property="buttonSoon" destination="1Nu-c5-2nd" id="nKe-78-WTL"/>
+                <outlet property="collectionView" destination="wdT-kH-H2Y" id="63Z-QK-ykc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
 
     @IBOutlet var buttonNow: UIButton!
     @IBOutlet var buttonSoon: UIButton!
+    @IBOutlet var collectionView: UICollectionView!
+    public static let collectionViewCellId = "cvc"
 
     override func viewDidLoad() {
         super.viewDidLoad()
