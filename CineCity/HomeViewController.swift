@@ -44,6 +44,8 @@ class HomeViewController: UIViewController {
         self.initRest()
         
         self.call()
+        
+        
     }
     
     private func initLocalizable() {

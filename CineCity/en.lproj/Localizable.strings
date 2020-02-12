@@ -7,6 +7,7 @@
 */
 "login" = "LOGIN";
 "logout" = "Log Out";
+"signup" = "Sign Up";
 "username" = "Username";
 "password" = "Password";
 "past" = "Past";

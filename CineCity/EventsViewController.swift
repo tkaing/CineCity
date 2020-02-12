@@ -8,11 +8,20 @@
 
 import UIKit
 
-class EventsViewController: UIViewController {
+class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    public static let EventsTableViewCellId = "etvc"
 
+    @IBOutlet var eventsTableView: UITableView!
     @IBOutlet var button_films: UIButton!
     @IBOutlet var button_events: UIButton!
     @IBOutlet var button_tickets: UIButton!
+    
+    var events: [Event] = [] {
+        didSet {
+            self.eventsTableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +31,16 @@ class EventsViewController: UIViewController {
         button_events.setTitle(NSLocalizedString("events", comment: ""), for: .normal)
         button_tickets.setTitle(NSLocalizedString("tickets", comment: ""), for: .normal)
         
+        self.eventsService.all { (events) in
+            self.events = events
+            print(self.events)
+        }
+        
+    }
+    
+    var eventsService: EventCall {
+        //return BilletsMockService()
+        return EventCallAPI()
     }
     
     @IBAction func pressGoFilms(_ sender: UIButton) {
@@ -32,5 +51,17 @@ class EventsViewController: UIViewController {
     }
     @IBAction func pressGoBillets(_ sender: UIButton) {
         FooterUtils.billets(view: self)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.events.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: EventsViewController.EventsTableViewCellId, for: indexPath) as! EventTableViewCell
+        let event = self.events[indexPath.row]
+        cell.nameEvent.text = event.title
+        //cell.dateEvent.text = DateUtils.toString(date: event.date)
+        return cell
     }
 }
