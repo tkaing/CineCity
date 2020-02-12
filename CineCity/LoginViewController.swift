@@ -68,13 +68,6 @@ class LoginViewController: UIViewController {
           nav?.barStyle = UIBarStyle.black
           let textChangeColor = [NSAttributedString.Key.foregroundColor:UIColor.white]
           navigationController?.navigationBar.titleTextAttributes = textChangeColor
-        
-        self.navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(touchAdminButton))
-        ]
-
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func touchAdminButton() {

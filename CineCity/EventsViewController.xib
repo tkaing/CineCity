@@ -28,13 +28,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83C-3X-oRI">
                     <rect key="frame" x="0.0" y="776" width="414" height="100"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salles" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-bT-9D3">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-event" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-bT-9D3">
                             <rect key="frame" x="182" y="0.0" width="50" height="70"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="aPg-O1-7DZ"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="films" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-Do-6Sh">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-film" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-Do-6Sh">
                             <rect key="frame" x="50" y="0.0" width="50" height="70"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="8mK-QG-zlf"/>
@@ -64,7 +64,7 @@
                                 <action selector="pressGoFilms:" destination="-1" eventType="touchUpInside" id="E6C-tg-vl4"/>
                             </connections>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="billets" translatesAutoresizingMaskIntoConstraints="NO" id="G15-PX-hje">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="icon-ticket" translatesAutoresizingMaskIntoConstraints="NO" id="G15-PX-hje">
                             <rect key="frame" x="314" y="0.0" width="50" height="70"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="JWV-D5-zKH"/>
@@ -120,8 +120,8 @@
         </view>
     </objects>
     <resources>
-        <image name="billets" width="1300" height="1300"/>
-        <image name="films" width="820" height="656"/>
-        <image name="salles" width="803" height="682"/>
+        <image name="icon-event" width="128" height="128"/>
+        <image name="icon-film" width="128" height="128"/>
+        <image name="icon-ticket" width="128" height="128"/>
     </resources>
 </document>

@@ -14,6 +14,8 @@
 		506FFDAD23ACFFA60010AB29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506FFDAB23ACFFA60010AB29 /* LaunchScreen.storyboard */; };
 		506FFDB823ACFFA60010AB29 /* CineCityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDB723ACFFA60010AB29 /* CineCityTests.swift */; };
 		506FFDC323ACFFA60010AB29 /* CineCityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FFDC223ACFFA60010AB29 /* CineCityUITests.swift */; };
+		507E0A3123F45D920040D1C7 /* FilmCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507E0A2F23F45D920040D1C7 /* FilmCollectionViewCell.swift */; };
+		507E0A3223F45D920040D1C7 /* FilmCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 507E0A3023F45D920040D1C7 /* FilmCollectionViewCell.xib */; };
 		508D813C23F2B3F5007CA042 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508D813A23F2B3F5007CA042 /* ProfileViewController.swift */; };
 		508D813D23F2B3F5007CA042 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508D813B23F2B3F5007CA042 /* ProfileViewController.xib */; };
 		508D814023F2C0B7007CA042 /* AdminFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508D813E23F2C0B7007CA042 /* AdminFilmViewController.swift */; };
@@ -97,6 +99,8 @@
 		506FFDBE23ACFFA60010AB29 /* CineCityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineCityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506FFDC223ACFFA60010AB29 /* CineCityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineCityUITests.swift; sourceTree = "<group>"; };
 		506FFDC423ACFFA60010AB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507E0A2F23F45D920040D1C7 /* FilmCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewCell.swift; sourceTree = "<group>"; };
+		507E0A3023F45D920040D1C7 /* FilmCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmCollectionViewCell.xib; sourceTree = "<group>"; };
 		508D813A23F2B3F5007CA042 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		508D813B23F2B3F5007CA042 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		508D813E23F2C0B7007CA042 /* AdminFilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminFilmViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 				508D813F23F2C0B7007CA042 /* AdminFilmViewController.xib */,
 				508D814223F2C0C5007CA042 /* AdminEventViewController.swift */,
 				508D814323F2C0C5007CA042 /* AdminEventViewController.xib */,
+				507E0A2F23F45D920040D1C7 /* FilmCollectionViewCell.swift */,
+				507E0A3023F45D920040D1C7 /* FilmCollectionViewCell.xib */,
 			);
 			path = CineCity;
 			sourceTree = "<group>";
@@ -456,6 +462,7 @@
 				9856B3F023F012CE009210EC /* EventsViewController.xib in Resources */,
 				CE555FF023EDA28000D9AC71 /* Localizable.strings in Resources */,
 				508D814123F2C0B7007CA042 /* AdminFilmViewController.xib in Resources */,
+				507E0A3223F45D920040D1C7 /* FilmCollectionViewCell.xib in Resources */,
 				CE555FFF23EDC73500D9AC71 /* PastReservationsTableViewCell.xib in Resources */,
 				CE555FFB23EDC3C200D9AC71 /* PastReservationsListViewController.xib in Resources */,
 				8F24E05D23EB655F006094A3 /* LoginViewController.xib in Resources */,
@@ -618,6 +625,7 @@
 				CE555FFE23EDC73500D9AC71 /* PastReservationsTableViewCell.swift in Sources */,
 				50C619CD23F1450800A92A93 /* BilletUtils.swift in Sources */,
 				8F24E06E23ED9407006094A3 /* SignUpViewController.swift in Sources */,
+				507E0A3123F45D920040D1C7 /* FilmCollectionViewCell.swift in Sources */,
 				8F24E01523DB666E006094A3 /* BilletsTableViewCell.swift in Sources */,
 				508D814D23F2EF99007CA042 /* EventUtils.swift in Sources */,
 				50C619B923F1443F00A92A93 /* Film.swift in Sources */,

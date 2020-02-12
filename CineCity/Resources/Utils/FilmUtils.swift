@@ -21,4 +21,16 @@ class FilmUtils {
         }
         return Film(id: id, title: title, releaseDate: releaseDateObject)
     }
+    
+    static func filterByNow(films: [Film]) -> [Film] {
+        return films.filter {
+            $0.releaseDate <= Date()
+        }
+    }
+    
+    static func filterByUpcoming(films: [Film]) -> [Film] {
+        return films.filter {
+            $0.releaseDate > Date()
+        }
+    }
 }

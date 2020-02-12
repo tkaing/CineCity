@@ -43,7 +43,6 @@ class PastReservationsListViewController: UIViewController {
         
         button_past.setTitle(NSLocalizedString("past", comment: ""), for: .normal)
         button_upcoming.setTitle(NSLocalizedString("upcoming", comment: ""), for: .normal)
-        
         button_films.setTitle(NSLocalizedString("films", comment: ""), for: .normal)
         button_events.setTitle(NSLocalizedString("events", comment: ""), for: .normal)
         button_tickets.setTitle(NSLocalizedString("tickets", comment: ""), for: .normal)
@@ -55,9 +54,12 @@ class PastReservationsListViewController: UIViewController {
     }
     
     @IBAction func touch_past(_ sender: Any) {
+        self.button_past.setTitleColor(.systemBlue, for: .normal)
+        self.button_upcoming.setTitleColor(.white, for: .normal)
     }
-    
     @IBAction func touch_upcoming(_ sender: Any) {
+        self.button_past.setTitleColor(.white, for: .normal)
+        self.button_upcoming.setTitleColor(.systemBlue, for: .normal)
     }
     
     @IBAction func pressGoFilms(_ sender: UIButton) {

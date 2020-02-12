@@ -25,12 +25,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dKj-rR-ChE">
-                    <rect key="frame" x="0.0" y="138" width="414" height="618"/>
+                    <rect key="frame" x="0.0" y="140" width="414" height="616"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dp7-yn-a9n">
-                    <rect key="frame" x="0.0" y="84" width="207" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <rect key="frame" x="0.0" y="84" width="207" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Past">
                         <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </state>
@@ -39,8 +39,8 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPm-FK-Tuh">
-                    <rect key="frame" x="207" y="84" width="207" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <rect key="frame" x="207" y="84" width="207" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Upcoming">
                         <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </state>
@@ -60,13 +60,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hw9-wM-aHJ">
                     <rect key="frame" x="0.0" y="776" width="414" height="100"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salles" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-Fk-hrD">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-event" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-Fk-hrD">
                             <rect key="frame" x="182" y="0.0" width="50" height="70"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="4rA-QJ-9LG"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="films" translatesAutoresizingMaskIntoConstraints="NO" id="UQJ-FR-fxf">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-film" translatesAutoresizingMaskIntoConstraints="NO" id="UQJ-FR-fxf">
                             <rect key="frame" x="50" y="0.0" width="50" height="70"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="aC6-0n-bsi"/>
@@ -96,7 +96,7 @@
                                 <action selector="pressGoFilms:" destination="-1" eventType="touchUpInside" id="sXU-BL-Iha"/>
                             </connections>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="billets" translatesAutoresizingMaskIntoConstraints="NO" id="ccB-lD-YVq">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="icon-ticket" translatesAutoresizingMaskIntoConstraints="NO" id="ccB-lD-YVq">
                             <rect key="frame" x="314" y="0.0" width="50" height="70"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="L5x-bD-hvf"/>
@@ -159,8 +159,8 @@
         </view>
     </objects>
     <resources>
-        <image name="billets" width="1300" height="1300"/>
-        <image name="films" width="820" height="656"/>
-        <image name="salles" width="803" height="682"/>
+        <image name="icon-event" width="128" height="128"/>
+        <image name="icon-film" width="128" height="128"/>
+        <image name="icon-ticket" width="128" height="128"/>
     </resources>
 </document>

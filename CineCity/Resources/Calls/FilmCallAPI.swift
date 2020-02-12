@@ -13,7 +13,7 @@ class FilmCallAPI: FilmCall {
     private let url: String = "http://tchooz.fr/film"
     
     func all(completion: @escaping ([Film]) -> Void) {
-        Alamofire.request(self.url, method: .get).responseJSON { (request) in
+        Alamofire.request(self.url + "/all", method: .get).responseJSON { (request) in
             guard
                 let items = request.value as? [[String:Any]]
             else {
