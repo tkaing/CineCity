@@ -50,6 +50,8 @@
 		8F24E05D23EB655F006094A3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E05923EB655F006094A3 /* LoginViewController.xib */; };
 		8F24E06E23ED9407006094A3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E06C23ED9407006094A3 /* SignUpViewController.swift */; };
 		8F24E06F23ED9407006094A3 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F24E06D23ED9407006094A3 /* SignUpViewController.xib */; };
+		984C9E3623F4A854000349C5 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984C9E3423F4A854000349C5 /* EventTableViewCell.swift */; };
+		984C9E3723F4A854000349C5 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984C9E3523F4A854000349C5 /* EventTableViewCell.xib */; };
 		9856B3EF23F012CE009210EC /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9856B3ED23F012CE009210EC /* EventsViewController.swift */; };
 		9856B3F023F012CE009210EC /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9856B3EE23F012CE009210EC /* EventsViewController.xib */; };
 		9856B3F323F01438009210EC /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9856B3F123F01438009210EC /* AdminLoginViewController.swift */; };
@@ -137,6 +139,8 @@
 		8F24E05923EB655F006094A3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8F24E06C23ED9407006094A3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8F24E06D23ED9407006094A3 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		984C9E3423F4A854000349C5 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		984C9E3523F4A854000349C5 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		9856B3ED23F012CE009210EC /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		9856B3EE23F012CE009210EC /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		9856B3F123F01438009210EC /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
@@ -259,6 +263,8 @@
 				508D814323F2C0C5007CA042 /* AdminEventViewController.xib */,
 				507E0A2F23F45D920040D1C7 /* FilmCollectionViewCell.swift */,
 				507E0A3023F45D920040D1C7 /* FilmCollectionViewCell.xib */,
+				984C9E3423F4A854000349C5 /* EventTableViewCell.swift */,
+				984C9E3523F4A854000349C5 /* EventTableViewCell.xib */,
 			);
 			path = CineCity;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 				508D813D23F2B3F5007CA042 /* ProfileViewController.xib in Resources */,
 				506FFDAA23ACFFA60010AB29 /* Assets.xcassets in Resources */,
 				8F24E00A23C757AE006094A3 /* HomeViewController.xib in Resources */,
+				984C9E3723F4A854000349C5 /* EventTableViewCell.xib in Resources */,
 				9856B3F023F012CE009210EC /* EventsViewController.xib in Resources */,
 				CE555FF023EDA28000D9AC71 /* Localizable.strings in Resources */,
 				508D814123F2C0B7007CA042 /* AdminFilmViewController.xib in Resources */,
@@ -613,6 +620,7 @@
 				9856B3EF23F012CE009210EC /* EventsViewController.swift in Sources */,
 				50E4010823F2A97D0071A89B /* User.swift in Sources */,
 				CE555FFA23EDC3C200D9AC71 /* PastReservationsListViewController.swift in Sources */,
+				984C9E3623F4A854000349C5 /* EventTableViewCell.swift in Sources */,
 				504DF1AD23F32A4000F5517D /* HeaderUtils.swift in Sources */,
 				8F24E00923C757AE006094A3 /* HomeViewController.swift in Sources */,
 				50C619CB23F144FB00A92A93 /* BilletCallAPI.swift in Sources */,
