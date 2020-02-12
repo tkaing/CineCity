@@ -33,7 +33,7 @@ class PastReservationsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initNavigation(title: "Billets")
+        self.initNavigation(title: "Tickets")
         
         self.reservationsList.rowHeight = 120
         self.reservationsList.backgroundColor = UIColor.clear
@@ -47,6 +47,7 @@ class PastReservationsListViewController: UIViewController {
         button_events.setTitle(NSLocalizedString("events", comment: ""), for: .normal)
         button_tickets.setTitle(NSLocalizedString("tickets", comment: ""), for: .normal)
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         self.billetsService.all { (billets) in
             self.reservations = BilletUtils.filterByUser(tickets: billets)

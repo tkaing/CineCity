@@ -23,7 +23,7 @@ class ProfileViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = textChangeColor
         self.labelEmail.text = UserUtils.user.email
         
-    button_logout.setTitle(NSLocalizedString("logout", comment: ""), for: .normal)
+        button_logout.setTitle(NSLocalizedString("logout", comment: ""), for: .normal)
     }
 
     @IBAction func pressLogout(_ sender: UIButton) {

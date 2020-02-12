@@ -62,6 +62,7 @@ class LoginViewController: UIViewController {
         label_username.text = NSLocalizedString("username", comment: "")
         label_password.text = NSLocalizedString("password", comment: "")
         btn_login.setTitle(NSLocalizedString("login", comment: ""), for: .normal)
+        signUp_button.setTitle(NSLocalizedString("signup", comment: ""), for: .normal)
         
         let nav = self.navigationController?.navigationBar
           nav?.isTranslucent = false
