@@ -43,14 +43,15 @@ class AdminLoginViewController: UIViewController {
 }
 
 extension UIImage {
-    func toBase64() -> String {
-        let imageData = self.pngData()!
-        return imageData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+    func toBase64() -> String? {
+        let data = self.pngData()
+        guard let d = data else { return nil }
+        return d.base64EncodedString()
     }
 }
 extension String {
-    func toBase64Image(data: String) -> UIImage {
-        let imageData = Data(base64Encoded: data, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)!
-        return UIImage(data: imageData)!
+    func toImage() -> UIImage? {
+        guard let data = Data(base64Encoded: self) else { return nil }
+        return UIImage(data: data)
     }
 }

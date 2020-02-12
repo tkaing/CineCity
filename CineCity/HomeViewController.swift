@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeViewController: UIViewController {
 
@@ -114,9 +115,24 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionViewNow.dequeueReusableCell(withReuseIdentifier: HomeViewController.collectionViewCellId, for: indexPath) as! FilmCollectionViewCell
-        //let film = self.filmsNow[indexPath.row]
+        
+        var films: [Film] = []
+        
+        if (collectionView == self.collectionViewNow) {
+            films = self.filmsNow
+        }
+        if (collectionView == self.collectionViewUpcoming) {
+            films = self.filmsUpcoming
+        }
+        
+        let film = films[indexPath.row]
         cell.layer.cornerRadius = 6
-        //cell.imageViewFilm = UIImage()
+        
+        let imageView = UIImageView(frame: cell.frame)
+        imageView.image = film.image
+        imageView.contentMode = .scaleAspectFill
+        cell.contentView.addSubview(imageView)
+        
         return cell
     }
     

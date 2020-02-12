@@ -45,10 +45,16 @@ class AdminFilmViewController: UIViewController {
         
         if formValidation() {
             
+            guard
+                let image = imageViewFilm.image,
+                let imageEncoded = image.toBase64()
+            else { return }
+            
             let item: [String:Any] = [
                 "id": -1,
                 "title": textTitle.text as Any,
-                "releaseDate": textReleaseDate.text as Any
+                "releaseDate": textReleaseDate.text as Any,
+                "image": imageEncoded as Any
             ]
             if let film = FilmUtils.map(item: item) {
                 filmCall.save(object: film) { (film) in
@@ -84,7 +90,6 @@ extension AdminFilmViewController: UIImagePickerControllerDelegate, UINavigation
             return
         }
         self.imageViewFilm.image = image
-        //print(self.imageViewFilm.image?.toBase64())
         picker.dismiss(animated: true)
     }
 }
