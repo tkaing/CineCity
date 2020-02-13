@@ -81,6 +81,8 @@ class FilmViewController: UIViewController {
             self.collectionViewSessions.isHidden = true
             self.textSessions.isHidden = true
         }
+        //self.buttonReserve.isUserInteractionEnabled = false
+        self.buttonReserve.isEnabled = false
     }
     private func call() {
         self.sessionCall.all { (sessions) in
