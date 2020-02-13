@@ -30,4 +30,12 @@ class UserUtils {
     static func getModeAdministrator() -> User {
         User(id: -1, email: "admin@live.fr", password: "test")
     }
+    
+    static func isLogged() -> Bool {
+        return UserUtils.user.email != "" || UserUtils.isAdministrator()
+    }
+    
+    static func isAdministrator() -> Bool {
+        return UserUtils.user.email == UserUtils.getModeAdministrator().email
+    }
 }

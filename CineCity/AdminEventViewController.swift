@@ -59,13 +59,18 @@ class AdminEventViewController: UIViewController {
                         self.textTitle.text = ""
                         self.textCategory.text = ""
                         self.textDescription.text = ""
+                        self.alertCustom(title: "Succès", message: "Votre événement a bien été ajouté.")
+                    } else {
+                        self.alertCustom(title: "Échec", message: "Votre ajout d'événement n'a pas pu aboutir.")
                     }
                     self.afterSave()
                 }
             } else {
+                self.alertCustom(title: "Échec", message: "Votre ajout d'événement n'a pas pu aboutir.")
                 self.afterSave()
             }
         } else {
+            self.alertCustom(title: "Échec", message: "Votre ajout d'événement n'a pas pu aboutir.")
             self.afterSave()
         }
     }

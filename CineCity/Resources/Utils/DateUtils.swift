@@ -23,4 +23,16 @@ class DateUtils {
     static func toString(date: Date) -> String {
         return DateUtils.formatter.string(from: date)
     }
+    
+    static func mapCustom(custom: String, date: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = custom
+        return dateFormatter.date(from: date)
+    }
+    
+    static func toStringCustom(custom: String, date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = custom
+        return dateFormatter.string(from: date)
+    }
 }

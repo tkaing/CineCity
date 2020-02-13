@@ -99,9 +99,22 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    /*func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // Redirect to Film Details
-    }*/
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let view = FilmViewController()
+        
+        var films: [Film] = []
+        
+        if (collectionView == self.collectionViewNow) {
+            films = self.filmsNow
+        }
+        if (collectionView == self.collectionViewUpcoming) {
+            films = self.filmsUpcoming
+        }
+        
+        view.film = films[indexPath.row]
+        self.navigationController?.pushViewController(view, animated: true)
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if (collectionView == self.collectionViewNow) {
@@ -179,5 +192,17 @@ extension UIViewController {
         } else {
             self.navigationController?.pushViewController(LoginViewController(), animated: true)
         }
+    }
+    
+    func alertCustom(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+        
+        /*alert.addAction(UIAlertAction(title: "Niveau Suivant",
+        }))*/
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }

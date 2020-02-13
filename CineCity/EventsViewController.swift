@@ -10,7 +10,7 @@ import UIKit
 
 class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    public static let EventsTableViewCellId = "etvc"
+    public static let eventsTableViewCellId = "etvc"
 
     @IBOutlet var eventsTableView: UITableView!
     @IBOutlet var button_films: UIButton!
@@ -31,9 +31,14 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         button_events.setTitle(NSLocalizedString("events", comment: ""), for: .normal)
         button_tickets.setTitle(NSLocalizedString("tickets", comment: ""), for: .normal)
         
+        self.eventsTableView.rowHeight = 120
+        self.eventsTableView.backgroundColor = UIColor.clear
+        self.eventsTableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: EventsViewController.eventsTableViewCellId)
+        self.eventsTableView.dataSource = self
+        self.eventsTableView.delegate = self
+        
         self.eventsService.all { (events) in
             self.events = events
-            print(self.events)
         }
         
     }
@@ -58,10 +63,10 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: EventsViewController.EventsTableViewCellId, for: indexPath) as! EventTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: EventsViewController.eventsTableViewCellId, for: indexPath) as! EventTableViewCell
         let event = self.events[indexPath.row]
         cell.nameEvent.text = event.title
-        //cell.dateEvent.text = DateUtils.toString(date: event.date)
+        cell.dateEvent.text = DateUtils.toString(date: Date())
         return cell
     }
 }

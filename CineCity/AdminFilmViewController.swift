@@ -61,13 +61,18 @@ class AdminFilmViewController: UIViewController {
                     if film != nil {
                         self.textTitle.text = ""
                         self.textReleaseDate.text = ""
+                        self.alertCustom(title: "Succès", message: "Votre film a été ajouté.")
+                    } else {
+                        self.alertCustom(title: "Échec", message: "Votre ajout de film n'a pas pu aboutir.")
                     }
                     self.afterSave()
                 }
             } else {
+                self.alertCustom(title: "Échec", message: "Votre ajout de film n'a pas pu aboutir.")
                 self.afterSave()
             }
         } else {
+            self.alertCustom(title: "Échec", message: "Votre ajout de film n'a pas pu aboutir.")
             self.afterSave()
         }
     }
