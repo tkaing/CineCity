@@ -59,9 +59,10 @@ class FilmViewController: UIViewController {
     private func initRest() {
         //self.labelTime.text = self.film.time
         self.labelTitle.text = self.film.title
-        self.labelReleaseDate.text = "Sortie le " + DateUtils.toStringCustom(custom: "dd/MM/YYYY", date: self.film.releaseDate)
+        self.labelReleaseDate.text = NSLocalizedString("outdate", comment: "") + DateUtils.toStringCustom(custom: "dd/MM/YYYY", date: self.film.releaseDate)
         self.imageViewFilm.image = self.film.image
-
+        buttonSave.setTitle(NSLocalizedString("save", comment: ""), for: .normal)
+        buttonReserve.setTitle(NSLocalizedString("reserve", comment: ""), for: .normal)
         if UserUtils.isLogged() {
             if UserUtils.isAdministrator() {
                 self.buttonSave.isHidden = false

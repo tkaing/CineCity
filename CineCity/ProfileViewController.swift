@@ -18,7 +18,7 @@ class ProfileViewController: UIViewController {
         let nav = self.navigationController?.navigationBar
         nav?.isTranslucent = false
         nav?.barStyle = UIBarStyle.black
-        navigationItem.title = "Profil Utilisateur"
+        navigationItem.title = NSLocalizedString("userprofile", comment: "")
         let textChangeColor = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textChangeColor
         self.labelEmail.text = UserUtils.user.email

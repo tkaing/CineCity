@@ -33,7 +33,7 @@ class PastReservationsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initNavigation(title: "Tickets")
+        self.initNavigation(title: NSLocalizedString("tickets", comment: ""))
         
         self.reservationsList.rowHeight = 120
         self.reservationsList.backgroundColor = UIColor.clear

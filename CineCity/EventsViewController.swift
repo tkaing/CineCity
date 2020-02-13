@@ -25,7 +25,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initNavigation(title: "Évènements")
+        self.initNavigation(title: NSLocalizedString("events", comment: ""))
         
         button_films.setTitle(NSLocalizedString("films", comment: ""), for: .normal)
         button_events.setTitle(NSLocalizedString("events", comment: ""), for: .normal)

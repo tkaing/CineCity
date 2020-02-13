@@ -20,4 +20,7 @@
 "addfilm" = "Add Film";
 "addevent" = "Add Event";
 "save" = "Save";
+"reserve" = "Reserve";
 "choosecover" = "Choose a cover";
+"userprofile" = "User Profile";
+"outdate" = "Out on ";

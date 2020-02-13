@@ -20,4 +20,7 @@
 "addfilm" = "Ajouter un film";
 "addevent" = "Ajouter un evènement";
 "save" = "Enregistrer";
+"reserve" = "Réserver";
 "choosecover" = "Choisir une couverture";
+"userprofile" = "Profil Utilisateur";
+"outdate" = "Sortie le ";
