@@ -59,7 +59,7 @@ class FilmViewController: UIViewController {
     private func initRest() {
         //self.labelTime.text = self.film.time
         self.labelTitle.text = self.film.title
-        self.labelReleaseDate.text = "Sortie le " + DateUtils.toString(date: self.film.releaseDate)
+        self.labelReleaseDate.text = "Sortie le " + DateUtils.toStringCustom(custom: "dd/MM/YYYY", date: self.film.releaseDate)
         self.imageViewFilm.image = self.film.image
 
         if UserUtils.isLogged() {
@@ -77,7 +77,7 @@ class FilmViewController: UIViewController {
         } else {
             self.buttonSave.isHidden = true
             self.buttonReserve.isHidden = true
-            //self.collectionViewSessions.isHidden = true
+            self.collectionViewSessions.isHidden = true
             self.textSessions.isHidden = true
         }
     }
