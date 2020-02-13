@@ -23,7 +23,7 @@
                             <constraint firstAttribute="height" constant="20" id="Jog-Vy-m0c"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI5-lf-aSE">
@@ -32,10 +32,11 @@
                             <constraint firstAttribute="height" constant="20" id="ftO-Px-XdN"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                 <constraints>
                     <constraint firstItem="Pgh-m9-2af" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="GtJ-wQ-GgT"/>
                     <constraint firstItem="pI5-lf-aSE" firstAttribute="top" secondItem="Pgh-m9-2af" secondAttribute="bottom" id="IYr-ID-zuf"/>

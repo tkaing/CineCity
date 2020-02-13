@@ -39,8 +39,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.eventsService.all { (events) in
             self.events = events
-        }
-        
+        }   
     }
     
     var eventsService: EventCall {

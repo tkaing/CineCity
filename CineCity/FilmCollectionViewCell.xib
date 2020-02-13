@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mU-bB-jya" userLabel="Content View">
                         <rect key="frame" x="0.0" y="0.0" width="134" height="208"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait-default" translatesAutoresizingMaskIntoConstraints="NO" id="uDS-Wj-Qi8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uDS-Wj-Qi8">
                                 <rect key="frame" x="0.0" y="0.0" width="134" height="208"/>
                             </imageView>
                         </subviews>
@@ -42,10 +42,10 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="134" height="208"/>
+            <connections>
+                <outlet property="imageViewFilm" destination="uDS-Wj-Qi8" id="lfO-BN-Aao"/>
+            </connections>
             <point key="canvasLocation" x="198.55072463768118" y="139.95535714285714"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="portrait-default" width="728" height="1165"/>
-    </resources>
 </document>

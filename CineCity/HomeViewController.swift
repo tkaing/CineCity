@@ -140,11 +140,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         let film = films[indexPath.row]
         cell.layer.cornerRadius = 6
-        
-        let imageView = UIImageView(frame: cell.frame)
-        imageView.image = film.image
-        imageView.contentMode = .scaleAspectFill
-        cell.contentView.addSubview(imageView)
+        cell.imageViewFilm.image = film.image
         
         return cell
     }

@@ -101,7 +101,7 @@ class FilmViewController: UIViewController {
                 
                 let item: [String:Any] = [
                     "id": -1,
-                    "time": self.activeSession as Any,
+                    "time": String(session) as Any,
                     "film": film.dictionnary() as Any
                 ]
                 if let session = SessionUtils.map(item: item) {
@@ -128,7 +128,7 @@ class FilmViewController: UIViewController {
             "film": film.dictionnary() as Any,
             "user": UserUtils.user.dictionnary() as Any
         ]
-        print(item)
+        
         if let ticket = BilletUtils.map(item: item) {
             billetCall.save(object: ticket) { (ticket) in
                 if ticket != nil {
